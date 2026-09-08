@@ -1,0 +1,6 @@
+{
+  "name": "TKA SMP 2027",
+  "description": "Aplikasi latihan ujian TKA SMP 2027 offline lengkap dengan paket soal, timer ujian, navigasi soal, dan review jawaban.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

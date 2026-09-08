@@ -1,0 +1,33 @@
+{
+  "engine": "Adobe AIR / ActionScript 3 (Master.swf + Master2.swf)",
+  "question_count_per_master": 100,
+  "navigation": {
+    "previous": "prevFrame(); page = page - 1",
+    "next": "nextFrame(); page = page + 1",
+    "answers": "A-E click handlers write the selected letter to jawaban_UserN.text",
+    "finish": "TestOver button moves option movie clip to frame 2; result screen is frame 102"
+  },
+  "timer": {
+    "tick_interval_ms": 100,
+    "initial_timer_count_ms": 1000,
+    "decrement_per_tick_ms": 100,
+    "display_format": "MM:SS",
+    "auto_finish_condition": "when displayed time equals 00:01, gotoAndStop(\"TestOver\")",
+    "warning": "The original SWF literally initializes timerCount to 1000 ms, which behaves like a ~1 second timer. This appears unsuitable for a real 100-question exam and should not be copied blindly into the remake."
+  },
+  "scoring": {
+    "initial_score": 0,
+    "initial_correct": 0,
+    "initial_wrong": 0,
+    "per_question": "if jawaban_UserN.text == kunci_jawabanN then correct += 1 and score += 1; otherwise wrong += 1",
+    "unanswered": "empty answer is treated as wrong because it does not equal the answer key",
+    "max_score": 100,
+    "display_fields": [
+      "salah_txt",
+      "benar_txt",
+      "Nilai_txt"
+    ],
+    "review": "result screen copies all user answers and all answer keys into review fields and marks each question state via hov_N.gotoAndStop(1 for correct, 2 for wrong)"
+  },
+  "master2": "Master2.swf uses the same general 100-question exam structure and logic."
+}

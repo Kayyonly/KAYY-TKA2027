@@ -1,0 +1,1404 @@
+{
+    "title": "TKA SMP 2027",
+    "source": "Decompiled from TKA SMP 2027 (32bit) APK / Master.swf",
+    "question_count": 100,
+    "app_rules": {
+        "engine": "Adobe AIR / ActionScript 3 (Master.swf + Master2.swf)",
+        "question_count_per_master": 100,
+        "navigation": {
+            "previous": "prevFrame(); page = page - 1",
+            "next": "nextFrame(); page = page + 1",
+            "answers": "A-E click handlers write the selected letter to jawaban_UserN.text",
+            "finish": "TestOver button moves option movie clip to frame 2; result screen is frame 102"
+        },
+        "timer": {
+            "tick_interval_ms": 100,
+            "initial_timer_count_ms": 1000,
+            "decrement_per_tick_ms": 100,
+            "display_format": "MM:SS",
+            "auto_finish_condition": "when displayed time equals 00:01, gotoAndStop(\"TestOver\")",
+            "warning": "The original SWF literally initializes timerCount to 1000 ms, which behaves like a ~1 second timer. This appears unsuitable for a real 100-question exam and should not be copied blindly into the remake."
+        },
+        "scoring": {
+            "initial_score": 0,
+            "initial_correct": 0,
+            "initial_wrong": 0,
+            "per_question": "if jawaban_UserN.text == kunci_jawabanN then correct += 1 and score += 1; otherwise wrong += 1",
+            "unanswered": "empty answer is treated as wrong because it does not equal the answer key",
+            "max_score": 100,
+            "display_fields": [
+                "salah_txt",
+                "benar_txt",
+                "Nilai_txt"
+            ],
+            "review": "result screen copies all user answers and all answer keys into review fields and marks each question state via hov_N.gotoAndStop(1 for correct, 2 for wrong)"
+        },
+        "master2": "Master2.swf uses the same general 100-question exam structure and logic."
+    },
+    "questions": [
+        {
+            "id": 1,
+            "question": "Diberikan beberapa bilangan sebagai berikut.Urutan bilangan dari yang terkecil sampai bilangan terbesar adalah….",
+            "options": {
+                "A": "A – C – B – D",
+                "B": "C – A – D – B",
+                "C": "D – B – C – A",
+                "D": "A – D – C – B"
+            },
+            "answer": "B",
+            "images": [
+                "images/bitmap_111.png"
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Hasil dari adalah….",
+            "options": {
+                "A": "12",
+                "B": "6",
+                "C": "10",
+                "D": "8"
+            },
+            "answer": "D",
+            "requires_media": true,
+            "images": [
+                "images/bitmap_108.png"
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Suhu di sebuah kota pegunungan pada pukul 06.00 adalah −9oC. Pada pukul 10.00 suhu naik 7oC, kemudian pada pukul 15.00 turun lagi 5 derajat. Pada malam hari, suhu tersebut kembali naik 4oC. Suhu kota tersebut pada malam hari adalah….",
+            "options": {
+                "A": "−7oC",
+                "B": "−5oC",
+                "C": "−3oC",
+                "D": "−1oC"
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 4,
+            "question": "Perhatikan gambar berikut ini! Jika DE : AB = 2 : 3 maka panjang BD adalah….",
+            "options": {
+                "A": "2 cm",
+                "B": "3 cm",
+                "C": "4 cm",
+                "D": "5 cm"
+            },
+            "answer": "B",
+            "images": [
+                "images/bitmap_102.png"
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Bentuk paling sederhana dari adalah….",
+            "options": {},
+            "answer": "A",
+            "content_blocks": [
+                "Bentuk paling sederhana dari adalah…."
+            ],
+            "requires_media": true,
+            "images": [
+                "images/bitmap_97.png",
+                "images/bitmap_98.png"
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Perhatikan tabel berikut! Keterangan:Surplus perdagangan terjadi jika nilai ekspor lebih besar daripada impor.Defisit perdagangan terjadi jika nilai impor lebih besar daripada ekspor.Berdasarkan data pada tabel di atas, pernyataan yang paling benar adalah ....",
+            "options": {
+                "A": "Komoditas minyak kelapa sawit mengalami defisit sebesar 6 miliar dolar AS.",
+                "B": "Komoditas karet mengalami surplus sebesar 2 miliar dolar AS.",
+                "C": "Komoditas nikel mengalami surplus sebesar 7 miliar dolar AS.",
+                "D": "Total nilai ekspor dari seluruh komoditas tersebut adalah sebesar 60 miliar dolar AS."
+            },
+            "answer": "C",
+            "images": [
+                "images/bitmap_93.png"
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Suatu pekerjaan dapat diselesaikan oleh 12 pekerja dalam 16 hari. Jika jumlah pekerja ditambah menjadi 16 orang (dengan pekerjaan yang sama) maka perbandingan lama waktu kerja baru terhadap lama waktu kerja awal adalah….",
+            "options": {
+                "A": "1 : 2",
+                "B": "3 : 4",
+                "C": "4 : 3",
+                "D": "2 : 1"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 8,
+            "question": "Sebuah peta memiliki skala 1 : 250.000. Jarak dua kota pada peta adalah 12 cm. Jika seorang pengendara motor melaju dengan kecepatan rata-rata 60 km per jam maka waktu yang dibutuhkan untuk menempuh jarak sebenarnya antara kedua kota tersebut adalah….",
+            "options": {
+                "A": "2 jam",
+                "B": "1/2 jam",
+                "C": "1 jam",
+                "D": "1,5 jam"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 9,
+            "question": "Perhatikan data nilai ulangan matematika berikut!60, 65, 70, 70, 75, 80, 85, 90, 89Pernyataan yang benar berdasarkan data tersebut adalah ....",
+            "options": {
+                "A": "Modus dari data tersebut adalah 85.",
+                "B": "Median dari data tersebut adalah 80.",
+                "C": "Rata-rata dari data tersebut adalah 76.",
+                "D": "Nilai tertinggi adalah dua kali dari median data."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 10,
+            "question": "Perhatikan informasi berikut!Andi dan Budi memiliki kelereng dengan perbandingan 3 : 5. Jumlah kelereng mereka seluruhnya 40 butir.Berdasarkan informasi tersebut, pernyataan yang benar adalah....",
+            "options": {
+                "A": "Andi memiliki 25 butir kelereng.",
+                "B": "Budi memiliki 20 butir kelereng.",
+                "C": "Selisih kelereng Andi dan Budi adalah 10 butir.",
+                "D": "Selisih kelereng Andi dan Budi adalah 5 butir."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 11,
+            "question": "Misalkan a dan b merupakan bilangan prima yang memenuhi a + b = 99 maka nilai ab adalah….",
+            "options": {
+                "A": "225",
+                "B": "195",
+                "C": "190",
+                "D": "194"
+            },
+            "answer": "D",
+            "images": []
+        },
+        {
+            "id": 12,
+            "question": "Perhatikan informasi berikut!Sebuah bilangan adalah 360. Bilangan tersebut akan diuraikan menjadi faktor-faktor prima.Berdasarkan informasi tersebut, pernyataan yang benar adalah ....",
+            "options": {
+                "A": "Bilangan 360 memiliki faktor prima 2, 3, dan 5.",
+                "B": "Pangkat tertinggi faktor prima 3 pada bilangan 360 adalah 3.",
+                "C": "Bilangan 360 termasuk ke dalam kelompok bilangan prima.",
+                "D": "Hasil perkalian faktor primanya adalah 22 × 33 × 5."
+            },
+            "answer": "A",
+            "images": []
+        },
+        {
+            "id": 13,
+            "question": "Jika y merupakan penyelesaian dari 3(4x + 6) = 2(3x – 6) + 18 maka nilai y + 5 adalah….",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4"
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 14,
+            "question": "Rahmad membeli kue untuk lebaran. Harga satu kaleng kue nastar sama dengan 2 kali harga satu kaleng keju. Harga 3 kaleng kue nastar dan 2 kaleng kue keju adalah Rp480.000. Uang yang harus dibayarkan Rahmad untuk membeli 2 kaleng kue nastar dan 3 kaleng kue keju adalah....",
+            "options": {
+                "A": "Rp480.000",
+                "B": "Rp420.000",
+                "C": "Rp360.000",
+                "D": "Rp180.000"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 15,
+            "question": "Manakah di antara relasi berikut yang merupakan fungsi jika daerah asalnya adalah seluruh siswa di kelasmu?",
+            "options": {
+                "A": "Relasi \"hobi dari\" siswa di kelasmu.",
+                "B": "Relasi \"makanan favorit dari\" siswa di kelasmu.",
+                "C": "Relasi \"ibu kandung dari\" siswa di kelasmu.",
+                "D": "Relasi \"buku bacaan kesukaan dari\" siswa di kelasmu."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 16,
+            "question": "Sebuah fungsi didefinisikan dengan himpunan pasangan berurutan:{(1, 3), (2, 5), (3, 7), (4, 9)}Pernyataan yang benar mengenai fungsi tersebut adalah....",
+            "options": {
+                "A": "Domain dari fungsi tersebut adalah {1, 2, 3, 9}.",
+                "B": "Range dari fungsi tersebut adalah {3, 5, 7, 9}.",
+                "C": "Nilai dari fungsi untuk f(3) adalah 5.",
+                "D": "Rumus fungsi yang memenuhi pasangan berurutan tersebut adalah f(x)=3x."
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 17,
+            "question": "Peneliti A dan B melakukan perkembangbiakkan terhadap amuba, dan masing-masing memegang 35 amuba. Amuba dari Peneliti A bisa membelah diri setiap 15 menit sekali. Sedangkan, amuba dari Peneliti B membelah diri setiap 25 menit sekali. Amuba dari peneliti A sekarang berjumlah 1.120. Sedangkan, amuba dari Peneliti B sekarang sebanyak….",
+            "options": {
+                "A": "250",
+                "B": "230",
+                "C": "280",
+                "D": "330"
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 18,
+            "question": "Diketahui beberapa pernyataan tentang ciri-ciri sudut.Pernyataan berikut yang benar adalah....",
+            "options": {
+                "A": "Sudut terbentuk dari dua sinar garis yang memiliki titik pangkal yang sama.",
+                "B": "Sudut lancip adalah sudut yang besarnya lebih dari 90°.",
+                "C": "Sudut tumpul adalah sudut yang besarnya kurang dari 90°.",
+                "D": "Sudut siku-siku memiliki besar sudut kurang dari 90°."
+            },
+            "answer": "A",
+            "images": []
+        },
+        {
+            "id": 19,
+            "question": "Perhatikan sudut berikut! Besar sudut a adalah….",
+            "options": {
+                "A": "30o",
+                "B": "50o",
+                "C": "80o",
+                "D": "120o"
+            },
+            "answer": "C",
+            "images": [
+                "images/bitmap_51.png"
+            ]
+        },
+        {
+            "id": 20,
+            "question": "Tentukan tiga suku berikutnya dari barisan 4, 6, 10, 16, 24, ….",
+            "options": {
+                "A": "30, 36, 65",
+                "B": "30, 36, 68",
+                "C": "30, 45, 60",
+                "D": "34, 46, 60"
+            },
+            "answer": "D",
+            "images": []
+        },
+        {
+            "id": 21,
+            "question": "Berikut ini adalah ukuran sisi-sisi dari empat buah segitiga:(1) 3 cm, 4 cm, 5 cm(2) 5 cm, 6 cm, 7 cm(3) 6 cm, 8 cm, 10 cm(4) 8 cm, 15 cm, 17 cmSegitiga yang berbentuk segitiga siku-siku ditunjukkan oleh nomor ....",
+            "options": {
+                "A": "(1), (2), dan (3)",
+                "B": "(1), (3), dan (4)",
+                "C": "(2), (3), dan (4)",
+                "D": "(1) dan (2) saja"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 22,
+            "question": "Perhatikan gambar berikut! Jaring-jaring kubus ditunjukkan oleh gambar nomor….",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4"
+            },
+            "answer": "A",
+            "images": [
+                "images/bitmap_43.png"
+            ]
+        },
+        {
+            "id": 23,
+            "question": "Diketahui beberapa pernyataan tentang bangun ruang.Pernyataan berikut yang benar adalah....",
+            "options": {},
+            "answer": "B",
+            "content_blocks": [
+                "Diketahui beberapa pernyataan tentang bangun ruang.Pernyataan berikut yang benar adalah....",
+                "A.B.C.D.",
+                "Rumus volume prisma segitiga adalah Semua diagonal ruang pada bangun kubus memiliki panjang yang sama. Sisi-sisi tegak pada bangun limas segi empat selalu berbentuk persegi panjang. Sisi tegak pada bangun prisma segitiga selalu berbentuk lingkaran."
+            ],
+            "options_raw": "Rumus volume prisma segitiga adalah Semua diagonal ruang pada bangun kubus memiliki panjang yang sama. Sisi-sisi tegak pada bangun limas segi empat selalu berbentuk persegi panjang. Sisi tegak pada bangun prisma segitiga selalu berbentuk lingkaran.",
+            "images": [
+                "images/bitmap_39.png"
+            ]
+        },
+        {
+            "id": 24,
+            "question": "Friska ingin membuat kerangka limas persegi dengan panjang rusuk alas 30 cm dan panjang rusuk tegaknya 24 cm. Jika Friska memiliki kawat sepanjang 10 meter maka kerangka limas yang dapat dibuat paling banyak adalah….",
+            "options": {
+                "A": "4",
+                "B": "5",
+                "C": "6",
+                "D": "7"
+            },
+            "answer": "A",
+            "images": []
+        },
+        {
+            "id": 25,
+            "question": "Hitunglah luas permukaan bangun gabungan di bawah ini!",
+            "options": {
+                "A": "684 cm2",
+                "B": "594 cm2",
+                "C": "902 cm2",
+                "D": "820 cm2"
+            },
+            "answer": "C",
+            "images": [
+                "images/bitmap_29.png"
+            ]
+        },
+        {
+            "id": 26,
+            "question": "Perhatikan gambar berikut ini! Panjang AC = 20 cm, dan panjang BD = 56 cm maka luas bangun datar ABCD adalah ... cm2.",
+            "options": {
+                "A": "560",
+                "B": "660",
+                "C": "720",
+                "D": "740"
+            },
+            "answer": "A",
+            "images": [
+                "images/bitmap_25.png"
+            ]
+        },
+        {
+            "id": 27,
+            "question": "Perhatikan gambar berikut! Berdasarkan gambar tersebut, pernyataan berikut yang salah adalah....",
+            "options": {
+                "A": "Diameter lingkaran pada gambar adalah 42 cm.",
+                "B": "Luas lingkaran tersebut 1.",
+                "C": "526 cm2.",
+                "D": "Keliling lingkaran tersebut dapat dihitung dengan rumus Keliling lingkaran tersebut 132 cm."
+            },
+            "answer": "B",
+            "images": [
+                "images/bitmap_20.png",
+                "images/bitmap_21.png"
+            ]
+        },
+        {
+            "id": 28,
+            "question": "Tabel berikut menunjukkan data hasil penjualan buku di sebuah toko selama 4 hari. Berdasarkan data pada tabel di atas, pernyataan yang benar adalah....",
+            "options": {
+                "A": "Jumlah buku yang terjual pada hari Senin dan Rabu adalah 43 buku.",
+                "B": "Penjualan buku paling sedikit terjadi pada hari Kamis.",
+                "C": "Rata-rata penjualan buku setiap harinya adalah 26 buku.",
+                "D": "Total seluruh buku yang terjual selama 4 hari adalah 90 buku."
+            },
+            "answer": "A",
+            "images": [
+                "images/bitmap_12.png"
+            ]
+        },
+        {
+            "id": 29,
+            "question": "Diagram lingkaran berikut menunjukkan persentase ekstrakurikuler yang diikuti oleh 200 siswa. Berdasarkan data tersebut, manakah pernyataan yang benar? Berdasarkan data tersebut, pernyataan yang benar adalah....",
+            "options": {
+                "A": "Jumlah siswa yang mengikuti ekstrakurikuler Futsal adalah 70 orang.",
+                "B": "Jumlah siswa yang mengikuti ekstrakurikuler PMR adalah 15 orang.",
+                "C": "Ekstrakurikuler yang paling sedikit diikuti oleh siswa adalah Basket.",
+                "D": "Jumlah siswa yang mengikuti Pramuka lebih banyak daripada Futsal."
+            },
+            "answer": "A",
+            "images": [
+                "images/bitmap_6.png"
+            ]
+        },
+        {
+            "id": 30,
+            "question": "Dalam sebuah kotak terdapat 10 bola yang diberi nomor 1-10, diambil 3 bola satu persatu tanpa pengembalian. Jika pengembalian pertama dan kedua bernomor ganjil maka peluang terambil bola bernomor genap pada pengambilan ketiga adalah….",
+            "options": {},
+            "answer": "A",
+            "content_blocks": [
+                "Dalam sebuah kotak terdapat 10 bola yang diberi nomor 1-10, diambil 3 bola satu persatu tanpa pengembalian. Jika pengembalian pertama dan kedua bernomor ganjil maka peluang terambil bola bernomor genap pada pengambilan ketiga adalah…."
+            ],
+            "images": [
+                "images/bitmap_341.png"
+            ]
+        },
+        {
+            "id": 31,
+            "question": "Toko sembako menerima kiriman telur setiap 6 hari sekali dan beras setiap 8 hari sekali. Jika pada tanggal 1 Maret mereka menerima kiriman keduanya bersamaan, pada tanggal berapa mereka akan menerima kiriman bersamaan untuk kedua kalinya?",
+            "options": {
+                "A": "24 Maret",
+                "B": "25 Maret",
+                "C": "14 Maret",
+                "D": "15 Maret"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 32,
+            "question": "Seorang peternak memiliki persediaan pakan yang cukup untuk 20 ekor sapi selama 15 hari. Jika peternak tersebut membeli 5 ekor sapi lagi maka persediaan pakan akan habis dalam waktu ....",
+            "options": {
+                "A": "10 hari",
+                "B": "12 hari",
+                "C": "18 hari",
+                "D": "20 hari"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 33,
+            "question": "Harga 3 buku dan 2 pensil adalah Rp13.000. Sedangkan harga 5 buku dan 1 pensil adalah Rp17.000. Berapakah harga untuk 2 buku dan 3 pensil?",
+            "options": {
+                "A": "Rp9.000",
+                "B": "Rp10.000",
+                "C": "Rp11.000",
+                "D": "Rp12.000"
+            },
+            "answer": "D",
+            "images": []
+        },
+        {
+            "id": 34,
+            "question": "Diketahui fungsi f(x) = 5x - 3. Nilai dari f(4) + f(-2) adalah ....",
+            "options": {
+                "A": "4",
+                "B": "8",
+                "C": "17",
+                "D": "30"
+            },
+            "answer": "A",
+            "requires_media": true,
+            "images": []
+        },
+        {
+            "id": 35,
+            "question": "Sebuah tangga sepanjang 13 meter disandarkan pada tembok. Jika jarak ujung bawah tangga ke tembok adalah 5 meter maka tinggi tembok yang dicapai tangga adalah ....",
+            "options": {},
+            "answer": "C",
+            "content_blocks": [
+                "Sebuah tangga sepanjang 13 meter disandarkan pada tembok. Jika jarak ujung bawah tangga ke tembok adalah 5 meter maka tinggi tembok yang dicapai tangga adalah ....",
+                "A.B.C.D.",
+                "8 meter10 meter12 meter15 meter"
+            ],
+            "options_raw": "8 meter10 meter12 meter15 meter",
+            "images": []
+        },
+        {
+            "id": 36,
+            "question": "Dua buah sudut saling berpelurus. Jika besar sudut pertama adalah 75° maka besar sudut kedua adalah ....",
+            "options": {},
+            "answer": "C",
+            "content_blocks": [
+                "Dua buah sudut saling berpelurus. Jika besar sudut pertama adalah 75° maka besar sudut kedua adalah ....",
+                "A.B.C.D.",
+                "15°25°105°115°"
+            ],
+            "options_raw": "15°25°105°115°",
+            "images": []
+        },
+        {
+            "id": 37,
+            "question": "Titik P(3,–5) dicerminkan terhadap garis y = x. Koordinat bayangan titik P adalah ....",
+            "options": {},
+            "answer": "A",
+            "content_blocks": [
+                "Titik P(3,–5) dicerminkan terhadap garis y = x. Koordinat bayangan titik P adalah ....",
+                "A.B.C.D.",
+                "(–5, 3)(5, –3)(–3, 5)(3, 5)"
+            ],
+            "options_raw": "(–5, 3)(5, –3)(–3, 5)(3, 5)",
+            "images": []
+        },
+        {
+            "id": 38,
+            "question": "Sebuah bak mandi berbentuk kubus dengan panjang rusuk bagian dalam 80 cm. Jika bak tersebut diisi air hingga penuh, volume air tersebut dalam liter adalah ....",
+            "options": {},
+            "answer": "C",
+            "content_blocks": [
+                "Sebuah bak mandi berbentuk kubus dengan panjang rusuk bagian dalam 80 cm. Jika bak tersebut diisi air hingga penuh, volume air tersebut dalam liter adalah ....",
+                "A.B.C.D.",
+                "6,4 liter64 liter512 liter5.120 liter"
+            ],
+            "options_raw": "6,4 liter64 liter512 liter5.120 liter",
+            "images": []
+        },
+        {
+            "id": 39,
+            "question": "Rata-rata nilai ujian matematika dari 14 siswa adalah 75. Jika nilai seorang siswa baru digabungkan, rata-ratanya menjadi 76. Nilai siswa baru tersebut adalah ....",
+            "options": {},
+            "answer": "C",
+            "content_blocks": [
+                "Rata-rata nilai ujian matematika dari 14 siswa adalah 75. Jika nilai seorang siswa baru digabungkan, rata-ratanya menjadi 76. Nilai siswa baru tersebut adalah ....",
+                "A.B.C.D.",
+                "80859094"
+            ],
+            "options_raw": "80859094",
+            "images": []
+        },
+        {
+            "id": 40,
+            "question": "Dalam sebuah kantong terdapat 5 kelereng merah, 3 kelereng kuning, dan 2 kelereng hijau. Peluang terambilnya kelereng yang bukan berwarna merah adalah ....",
+            "options": {
+                "A": "1/2",
+                "B": "3/10",
+                "C": "1/5",
+                "D": "7/10"
+            },
+            "answer": "A",
+            "content_blocks": [
+                "Dalam sebuah kantong terdapat 5 kelereng merah, 3 kelereng kuning, dan 2 kelereng hijau. Peluang terambilnya kelereng yang bukan berwarna merah adalah ...."
+            ],
+            "images": []
+        },
+        {
+            "id": 41,
+            "question": "Sebuah proyek pembangunan laboratorium bahasa di sekolah ditargetkan selesai dalam waktu 40 hari oleh 15 orang pekerja. Setelah dikerjakan selama 10 hari, proyek terpaksa dihentikan selama 5 hari karena keterlambatan pengiriman material. Agar proyek dapat selesai tepat pada waktu yang telah ditargetkan semula, banyak pekerja tambahan yang harus ditambahkan oleh kontraktor adalah....",
+            "options": {
+                "A": "3 orang",
+                "B": "5 orang",
+                "C": "18 orang",
+                "D": "25 orang"
+            },
+            "answer": "A",
+            "content_blocks": [
+                "Sebuah proyek pembangunan laboratorium bahasa di sekolah ditargetkan selesai dalam waktu 40 hari oleh 15 orang pekerja. Setelah dikerjakan selama 10 hari, proyek terpaksa dihentikan selama 5 hari karena keterlambatan pengiriman material. Agar proyek dapat selesai tepat pada waktu yang telah ditargetkan semula, banyak pekerja tambahan yang harus ditambahkan oleh kontraktor adalah....",
+                "A.B.C.D.",
+                "3 orang 5 orang 18 orang 25 orang"
+            ],
+            "options_raw": "3 orang 5 orang 18 orang 25 orang",
+            "images": []
+        },
+        {
+            "id": 42,
+            "question": "Sebuah taman sekolah berbentuk persegi panjang memiliki ukuran panjang (3x – 2) meter dan lebar (x + 5) meter. Jika keliling taman tersebut disyaratkan tidak boleh lebih dari 62 meter, nilai x maksimal yang memenuhi syarat tersebut adalah....",
+            "options": {
+                "A": "7",
+                "B": "8",
+                "C": "12",
+                "D": "19"
+            },
+            "answer": "A",
+            "content_blocks": [
+                "Sebuah taman sekolah berbentuk persegi panjang memiliki ukuran panjang (3x – 2) meter dan lebar (x + 5) meter. Jika keliling taman tersebut disyaratkan tidak boleh lebih dari 62 meter, nilai x maksimal yang memenuhi syarat tersebut adalah....",
+                "A.B.C.D.",
+                "7 8 12 19"
+            ],
+            "options_raw": "7 8 12 19",
+            "images": []
+        },
+        {
+            "id": 43,
+            "question": "Untuk persiapan OSN, sekolah memesan buku paket dan kalkulator. Pada nota pertama dari toko A, pembelian 2 buku paket dan 3 kalkulator adalah Rp170.000. Pada nota kedua, pembelian 3 buku paket dan 1 kalkulator jenis yang sama adalah Rp185.000. Berdasarkan informasi tersebut, harga untuk 1 buah kalkulator adalah....",
+            "options": {
+                "A": "Rp20.000",
+                "B": "Rp25.000",
+                "C": "Rp35.000",
+                "D": "Rp55.000"
+            },
+            "answer": "A",
+            "content_blocks": [
+                "Untuk persiapan OSN, sekolah memesan buku paket dan kalkulator. Pada nota pertama dari toko A, pembelian 2 buku paket dan 3 kalkulator adalah Rp170.000. Pada nota kedua, pembelian 3 buku paket dan 1 kalkulator jenis yang sama adalah Rp185.000. Berdasarkan informasi tersebut, harga untuk 1 buah kalkulator adalah....",
+                "A.B.C.D.",
+                "Rp20.000 Rp25.000 Rp35.000 Rp55.000"
+            ],
+            "options_raw": "Rp20.000 Rp25.000 Rp35.000 Rp55.000",
+            "images": []
+        },
+        {
+            "id": 44,
+            "question": "Diketahui sebuah fungsi dirumuskan dengan f(x) = px + q. Jika diketahui hasil pemetaan f(2) = 7 dan f(-1) = -2, rumus fungsi f(x) yang benar adalah....",
+            "options": {
+                "A": "f(x) = 3x - 1",
+                "B": "f(x) = 3x + 1",
+                "C": "f(x) = 2x + 3",
+                "D": "f(x) = 2x - 3"
+            },
+            "answer": "B",
+            "content_blocks": [
+                "Diketahui sebuah fungsi dirumuskan dengan f(x) = px + q. Jika diketahui hasil pemetaan f(2) = 7 dan f(-1) = -2, rumus fungsi f(x) yang benar adalah....",
+                "A.B.C.D.",
+                "f(x) = 3x - 1f(x) = 3x + 1f(x) = 2x + 3f(x) = 2x - 3"
+            ],
+            "options_raw": "f(x) = 3x - 1f(x) = 3x + 1f(x) = 2x + 3f(x) = 2x - 3",
+            "images": []
+        },
+        {
+            "id": 45,
+            "question": "Kursi-kursi di aula sekolah disusun membentuk pola barisan aritmetika untuk acara perpisahan. Pada baris paling depan (pertama) terdapat 12 kursi, pada baris kedua terdapat 16 kursi, baris ketiga 20 kursi, dan seterusnya. Jika dalam aula tersebut memuat 10 baris kursi, kapasitas total tempat duduk di aula tersebut adalah....",
+            "options": {
+                "A": "52 kursi",
+                "B": "60 kursi",
+                "C": "200 kursi",
+                "D": "300 kursi"
+            },
+            "answer": "D",
+            "content_blocks": [
+                "Kursi-kursi di aula sekolah disusun membentuk pola barisan aritmetika untuk acara perpisahan. Pada baris paling depan (pertama) terdapat 12 kursi, pada baris kedua terdapat 16 kursi, baris ketiga 20 kursi, dan seterusnya. Jika dalam aula tersebut memuat 10 baris kursi, kapasitas total tempat duduk di aula tersebut adalah....",
+                "A.B.C.D.",
+                "52 kursi 60 kursi 200 kursi 300 kursi"
+            ],
+            "options_raw": "52 kursi 60 kursi 200 kursi 300 kursi",
+            "images": []
+        },
+        {
+            "id": 46,
+            "question": "Sebuah poster edukasi berukuran lebar 20 cm dan tinggi 30 cm ditempelkan pada selembar karton. Di sebelah kiri, kanan, dan atas poster masih tersisa ruang karton selebar 3 cm. Jika poster dan karton dipastikan sebangun, sisa lebar karton di bagian bawah poster adalah....",
+            "options": {
+                "A": "3 cm",
+                "B": "6 cm",
+                "C": "9 cm",
+                "D": "12 cm"
+            },
+            "answer": "B",
+            "content_blocks": [
+                "Sebuah poster edukasi berukuran lebar 20 cm dan tinggi 30 cm ditempelkan pada selembar karton. Di sebelah kiri, kanan, dan atas poster masih tersisa ruang karton selebar 3 cm. Jika poster dan karton dipastikan sebangun, sisa lebar karton di bagian bawah poster adalah....",
+                "A.B.C.D.",
+                "3 cm6 cm9 cm12 cm"
+            ],
+            "options_raw": "3 cm6 cm9 cm12 cm",
+            "images": []
+        },
+        {
+            "id": 47,
+            "question": "Sebuah titik K(–4, 2) pada bidang koordinat kartesius diberikan dua kali transformasi berurutan. Transformasi pertama adalah rotasi sebesar 90° searah jarum jam dengan titik pusat asal (0,0). Transformasi kedua adalah translasi sebesar (3, -1). Koordinat bayangan akhir titik K adalah....",
+            "options": {
+                "A": "(2, 4)",
+                "B": "(2, -4)",
+                "C": "(5, 3)",
+                "D": "(5, -5)"
+            },
+            "answer": "C",
+            "content_blocks": [
+                "Sebuah titik K(–4, 2) pada bidang koordinat kartesius diberikan dua kali transformasi berurutan. Transformasi pertama adalah rotasi sebesar 90° searah jarum jam dengan titik pusat asal (0,0). Transformasi kedua adalah translasi sebesar (3, -1). Koordinat bayangan akhir titik K adalah....",
+                "A.B.C.D.",
+                "(2, 4)(2, -4)(5, 3)(5, -5)"
+            ],
+            "options_raw": "(2, 4)(2, -4)(5, 3)(5, -5)",
+            "images": []
+        },
+        {
+            "id": 48,
+            "question": "Dalam pembelajaran bangun ruang sisi lengkung, siswa diminta merancang dua objek: sebuah tabung tanpa tutup dan sebuah kerucut utuh. Tabung dirancang dengan diameter 14 cm dan tinggi 20 cm. Kerucut dirancang dengan panjang jari-jari alas 7 cm dan garis pelukis 25 cm. Tinggi dari kerucut yang terbentuk dari rancangan tersebut adalah....",
+            "options": {
+                "A": "15 cm",
+                "B": "20 cm",
+                "C": "24 cm",
+                "D": "25 cm"
+            },
+            "answer": "C",
+            "content_blocks": [
+                "Dalam pembelajaran bangun ruang sisi lengkung, siswa diminta merancang dua objek: sebuah tabung tanpa tutup dan sebuah kerucut utuh. Tabung dirancang dengan diameter 14 cm dan tinggi 20 cm. Kerucut dirancang dengan panjang jari-jari alas 7 cm dan garis pelukis 25 cm. Tinggi dari kerucut yang terbentuk dari rancangan tersebut adalah....",
+                "A.B.C.D.",
+                "15 cm 20 cm 24 cm 25 cm"
+            ],
+            "options_raw": "15 cm 20 cm 24 cm 25 cm",
+            "images": []
+        },
+        {
+            "id": 49,
+            "question": "Hasil asesmen sumatif matematika dari 10 orang siswa adalah sebagai berikut: 75, 80, 85, 70, 90, 85, 60, 95, 80, 80. Nilai rata-rata (mean) dari kelompok data hasil asesmen tersebut adalah....",
+            "options": {
+                "A": "75",
+                "B": "80",
+                "C": "82,5",
+                "D": "85"
+            },
+            "answer": "B",
+            "content_blocks": [
+                "Hasil asesmen sumatif matematika dari 10 orang siswa adalah sebagai berikut: 75, 80, 85, 70, 90, 85, 60, 95, 80, 80. Nilai rata-rata (mean) dari kelompok data hasil asesmen tersebut adalah....",
+                "A.B.C.D.",
+                "75 80 82,5 85"
+            ],
+            "options_raw": "75 80 82,5 85",
+            "images": []
+        },
+        {
+            "id": 50,
+            "question": "Pada sebuah percobaan pelemparan dua buah dadu bermata enam secara bersamaan satu kali, diamati jumlah titik mata dadu yang muncul di permukaan atas. Banyaknya anggota ruang sampel (total kemungkinan) dari percobaan tersebut adalah....",
+            "options": {
+                "A": "6 kemungkinan",
+                "B": "12 kemungkinan",
+                "C": "18 kemungkinan",
+                "D": "36 kemungkinan"
+            },
+            "answer": "D",
+            "content_blocks": [
+                "Pada sebuah percobaan pelemparan dua buah dadu bermata enam secara bersamaan satu kali, diamati jumlah titik mata dadu yang muncul di permukaan atas. Banyaknya anggota ruang sampel (total kemungkinan) dari percobaan tersebut adalah....",
+                "A.B.C.D.",
+                "6 kemungkinan 12 kemungkinan 18 kemungkinan 36 kemungkinan"
+            ],
+            "options_raw": "6 kemungkinan 12 kemungkinan 18 kemungkinan 36 kemungkinan",
+            "images": []
+        },
+        {
+            "id": 51,
+            "question": "Danu memesan layanan ojek online untuk pergi ke tempat pembinaan persiapan olimpiade. Jarak yang ditempuh adalah 12 km. Tarif dasar perjalanan adalah Rp10.000 untuk 4 km pertama dan Rp2.500 untuk setiap kilometer berikutnya. Fajar memiliki voucer diskon sebesar 20% yang berlaku untuk total tarif.Total tarif perjalanan Danu sebelum dipotong oleh voucer diskon adalah....",
+            "options": {
+                "A": "Rp20.000",
+                "B": "Rp30.000",
+                "C": "Rp40.000",
+                "D": "Rp48.000"
+            },
+            "answer": "B",
+            "content_blocks": [
+                "Danu memesan layanan ojek online untuk pergi ke tempat pembinaan persiapan olimpiade. Jarak yang ditempuh adalah 12 km. Tarif dasar perjalanan adalah Rp10.000 untuk 4 km pertama dan Rp2.500 untuk setiap kilometer berikutnya. Fajar memiliki voucer diskon sebesar 20% yang berlaku untuk total tarif.Total tarif perjalanan Danu sebelum dipotong oleh voucer diskon adalah....",
+                "A.B.C.D.",
+                "Rp20.000 Rp30.000 Rp40.000 Rp48.000"
+            ],
+            "options_raw": "Rp20.000 Rp30.000 Rp40.000 Rp48.000",
+            "images": []
+        },
+        {
+            "id": 52,
+            "question": "Pak Darmanto merencanakan pembuatan taman literasi sekolah yang berbentuk persegi panjang. Panjang taman dirancang (2x + 3) meter dan lebarnya (x – 1) meter. Karena keterbatasan lahan, keliling taman tersebut disyaratkan tidak boleh lebih dari 34 meter. Model matematika yang tepat untuk menggambarkan batas keliling taman tersebut adalah....",
+            "options": {
+                "A": "3x + 2 ≤ 34",
+                "B": "3x + 2 ≤ 17",
+                "C": "6x + 4 ≤ 34",
+                "D": "6x + 2 ≤ 34"
+            },
+            "answer": "A",
+            "content_blocks": [
+                "Pak Darmanto merencanakan pembuatan taman literasi sekolah yang berbentuk persegi panjang. Panjang taman dirancang (2x + 3) meter dan lebarnya (x – 1) meter. Karena keterbatasan lahan, keliling taman tersebut disyaratkan tidak boleh lebih dari 34 meter. Model matematika yang tepat untuk menggambarkan batas keliling taman tersebut adalah....",
+                "A.B.C.D.",
+                "3x + 2 ≤ 343x + 2 ≤ 176x + 4 ≤ 346x + 2 ≤ 34"
+            ],
+            "options_raw": "3x + 2 ≤ 343x + 2 ≤ 176x + 4 ≤ 346x + 2 ≤ 34",
+            "images": []
+        },
+        {
+            "id": 53,
+            "question": "Aris Kristanto membeli 3 buah buku referensi pendamping Kurikulum Merdeka dan 2 buah spidol dengan total harga Rp85.000. Di toko yang sama, ia membeli 2 buah buku referensi dan 4 buah spidol sejenis seharga Rp70.000. Harga untuk 1 buah buku referensi tersebut adalah....",
+            "options": {
+                "A": "Rp5.000",
+                "B": "Rp10.000",
+                "C": "Rp20.000",
+                "D": "Rp25.000"
+            },
+            "answer": "D",
+            "content_blocks": [
+                "Aris Kristanto membeli 3 buah buku referensi pendamping Kurikulum Merdeka dan 2 buah spidol dengan total harga Rp85.000. Di toko yang sama, ia membeli 2 buah buku referensi dan 4 buah spidol sejenis seharga Rp70.000. Harga untuk 1 buah buku referensi tersebut adalah....",
+                "A.B.C.D.",
+                "Rp5.000 Rp10.000 Rp20.000 Rp25.000"
+            ],
+            "options_raw": "Rp5.000 Rp10.000 Rp20.000 Rp25.000",
+            "images": []
+        },
+        {
+            "id": 54,
+            "question": "Diberikan sebuah fungsi matematika yang dirumuskan dengan f(x) = –3x + 8. Jika diketahui nilai pemetaan f(a) = -1, nilai a yang memenuhi adalah....",
+            "options": {
+                "A": "-3",
+                "B": "1",
+                "C": "3",
+                "D": "11"
+            },
+            "answer": "C",
+            "content_blocks": [
+                "Diberikan sebuah fungsi matematika yang dirumuskan dengan f(x) = –3x + 8. Jika diketahui nilai pemetaan f(a) = -1, nilai a yang memenuhi adalah....",
+                "A.B.C.D.",
+                "-313 11"
+            ],
+            "options_raw": "-313 11",
+            "images": []
+        },
+        {
+            "id": 55,
+            "question": "Dalam rangka penataan ruang kelas yang bermakna, susunan meja siswa diatur membentuk barisan aritmetika. Baris terdepan berisi 4 meja, baris kedua berisi 7 meja, baris ketiga berisi 10 meja, dan seterusnya berpola sama hingga baris ke-8 (baris paling belakang). Banyaknya meja yang terletak pada baris paling belakang (baris ke-8) adalah....",
+            "options": {
+                "A": "3 meja",
+                "B": "25 meja",
+                "C": "28 meja",
+                "D": "31 meja"
+            },
+            "answer": "B",
+            "content_blocks": [
+                "Dalam rangka penataan ruang kelas yang bermakna, susunan meja siswa diatur membentuk barisan aritmetika. Baris terdepan berisi 4 meja, baris kedua berisi 7 meja, baris ketiga berisi 10 meja, dan seterusnya berpola sama hingga baris ke-8 (baris paling belakang). Banyaknya meja yang terletak pada baris paling belakang (baris ke-8) adalah....",
+                "A.B.C.D.",
+                "3 meja 25 meja 28 meja 31 meja"
+            ],
+            "options_raw": "3 meja 25 meja 28 meja 31 meja",
+            "images": []
+        },
+        {
+            "id": 56,
+            "question": "Sebuah tiang bendera di lapangan sekolah setinggi 6 meter berdiri sejajar dengan sebuah pohon. Pada siang hari, panjang bayangan tiang bendera di tanah adalah 8 meter, sedangkan pada saat yang sama panjang bayangan pohon adalah 12 meter. Berdasarkan prinsip kesebangunan, tinggi pohon tersebut sebenarnya adalah....",
+            "options": {
+                "A": "9 meter",
+                "B": "10 meter",
+                "C": "14 meter",
+                "D": "16 meter"
+            },
+            "answer": "A",
+            "content_blocks": [
+                "Sebuah tiang bendera di lapangan sekolah setinggi 6 meter berdiri sejajar dengan sebuah pohon. Pada siang hari, panjang bayangan tiang bendera di tanah adalah 8 meter, sedangkan pada saat yang sama panjang bayangan pohon adalah 12 meter. Berdasarkan prinsip kesebangunan, tinggi pohon tersebut sebenarnya adalah....",
+                "A.B.C.D.",
+                "9 meter 10 meter 14 meter 16 meter"
+            ],
+            "options_raw": "9 meter 10 meter 14 meter 16 meter",
+            "images": []
+        },
+        {
+            "id": 57,
+            "question": "Sebuah titik koordinat A(–2, 5) direfleksikan terhadap sumbu-x, kemudian dilanjutkan dengan translasi sejauh perpindahan (4, -3). Koordinat titik bayangan akhir dari titik A tersebut adalah....",
+            "options": {
+                "A": "(2, 5)",
+                "B": "(2, -8)",
+                "C": "(2, -2)",
+                "D": "(6, 2)"
+            },
+            "answer": "B",
+            "content_blocks": [
+                "Sebuah titik koordinat A(–2, 5) direfleksikan terhadap sumbu-x, kemudian dilanjutkan dengan translasi sejauh perpindahan (4, -3). Koordinat titik bayangan akhir dari titik A tersebut adalah....",
+                "A.B.C.D.",
+                "(2, 5)(2, -8)(2, -2)(6, 2)"
+            ],
+            "options_raw": "(2, 5)(2, -8)(2, -2)(6, 2)",
+            "images": []
+        },
+        {
+            "id": 58,
+            "question": "Siswa SMP kelas 9 mendapat tugas proyek untuk membuat model tangki air berbentuk tabung pejal dengan diameter 14 cm dan tinggi 10 cm. Di dalam tabung tersebut akan dimasukkan sebuah kerucut pejal dengan ukuran jari-jari alas dan tinggi yang sama persis dengan tabung. Volume maksimal dari ruang tabung tersebut adalah.... (Gunakan )",
+            "options": {
+                "A": "440 cm³",
+                "B": "513 cm³",
+                "C": "1.026 cm³",
+                "D": "1.540 cm³"
+            },
+            "answer": "D",
+            "content_blocks": [
+                "Siswa SMP kelas 9 mendapat tugas proyek untuk membuat model tangki air berbentuk tabung pejal dengan diameter 14 cm dan tinggi 10 cm. Di dalam tabung tersebut akan dimasukkan sebuah kerucut pejal dengan ukuran jari-jari alas dan tinggi yang sama persis dengan tabung. Volume maksimal dari ruang tabung tersebut adalah.... (Gunakan )",
+                "A.B.C.D.",
+                "440 cm3513 cm31.026 cm31.540 cm3"
+            ],
+            "options_raw": "440 cm3513 cm31.026 cm31.540 cm3",
+            "images": []
+        },
+        {
+            "id": 59,
+            "question": "Hasil analisis asesmen soal HOTS dari sekelompok siswa menunjukkan sebaran nilai sebagai berikut: 80, 75, 90, 85, 75, 80, 80, 95. Nilai median (nilai tengah setelah data diurutkan) dari sebaran data tersebut adalah....",
+            "options": {
+                "A": "77,5",
+                "B": "80",
+                "C": "82,5",
+                "D": "85"
+            },
+            "answer": "B",
+            "content_blocks": [
+                "Hasil analisis asesmen soal HOTS dari sekelompok siswa menunjukkan sebaran nilai sebagai berikut: 80, 75, 90, 85, 75, 80, 80, 95. Nilai median (nilai tengah setelah data diurutkan) dari sebaran data tersebut adalah....",
+                "A.B.C.D.",
+                "77,5 80 82,5 85"
+            ],
+            "options_raw": "77,5 80 82,5 85",
+            "images": []
+        },
+        {
+            "id": 60,
+            "question": "Di atas meja guru, terdapat sebuah kotak berisi alat tulis yang terdiri dari 5 spidol merah, 3 spidol biru, dan 4 spidol hitam. Seseorang mengambil satu spidol secara acak untuk menulis di papan tulis. Peluang terambilnya spidol berwarna biru pada pengambilan acak tersebut adalah....",
+            "options": {
+                "A": "[Data tidak tersedia]",
+                "B": "[Data tidak tersedia]",
+                "C": "[Data tidak tersedia]",
+                "D": "[Data tidak tersedia]"
+            },
+            "answer": "B",
+            "content_blocks": [
+                "Di atas meja guru, terdapat sebuah kotak berisi alat tulis yang terdiri dari 5 spidol merah, 3 spidol biru, dan 4 spidol hitam. Seseorang mengambil satu spidol secara acak untuk menulis di papan tulis. Peluang terambilnya spidol berwarna biru pada pengambilan acak tersebut adalah...."
+            ],
+            "images": []
+        },
+        {
+            "id": 61,
+            "question": "Bacalah teks berikut!(1) Hujan baru saja reda ketika lorong kecil di belakang sekolah mulai tampak lengang. Lampu jalan yang redup membuat bayangan pepohonan terlihat bergerak pelan tertiup angin. (2) Seorang siswa berjalan cepat sambil sesekali menoleh ke belakang. Suara langkahnya bergema di antara dinding bangunan yang sudah tua. Di kejauhan terdengar bunyi pintu besi berderit tanpa sebab yang jelas. (3) “Kenapa rasanya seperti ada yang mengikuti?” gumamnya pelan. Ia mempercepat langkah, namun tiba-tiba berhenti saat melihat kain putih tergantung di pagar besi. Setelah didekati, ternyata hanya baju sekolah yang tersangkut. (4) Ia menghela napas lega dan tertawa kecil. Ternyata semua yang ia takutkan hanya kebetulan yang membuat suasana terlihat menyeramkan.Suasana menegangkan pada teks tersebut ditunjukkan pada nomor….",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4"
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 62,
+            "question": "Bacalah teks berikut!Matahari baru saja terbit ketika Mardiono sampai. Di pundaknya tergantung sebuah karung goni berisi pisau cukur, cermin kecil, gunting, dan sabun batangan. Ia adalah tukang cukur keliling yang setiap pagi melewati jalan setapak di antara pohon-pohon mahoni yang rimbun. Daun-daun kering berderak di bawah sandal jepitnya. Burung-burung mulai berbunyi, tetapi Mardiono tidak sedang ingin bernyanyi. Perutnya keroncongan. Semalam ia hanya makan singkong rebus sisa dagangan warung Bu Lik.Setelah berjalan kira-kira dua puluh menit, sampailah ia di perkampungan kecil. Rumah-rumah papan berwarna hijau tua berdiri berjajar di kanan-kiri jalan tanah. Asap dapur mengepul dari celah-celah dapur. Seorang nenek sedang duduk di teras sambil mengupas kelapa. Mardiono menghela napas. Biasanya di sinilah ia mendapat pelanggan pertama. Tapi pagi ini suasana terasa sepi. Tak ada satu pun lelaki yang duduk bersila di beranda sambil menunggu giliran dicukur.\"Mari, Pak, cukur rambut. Dua ribu saja,\" seru Mardiono pelan, tapi suaranya tenggelam oleh suara ayam berkokok dari belakang rumah.Ia terus berjalan menyusuri kampung itu hingga ke ujung. Di sana terdapat sebuah warung kecil beratapkan rumbia. Warung itu sudah buka. Tiga orang bapak-bapak setengah baya sedang duduk di bangku panjang sambil menyesap kopi panas. Mereka berpakaian kaos lusuh dan celana kolor. Salah seorang di antaranya, yang kepalanya botak separuh, menepuk pundak temannya sambil berkata, \"Hei, ini tukang cukur datang. Kudengar sekarang dia sudah punya pisau baru.\"Latar tempat yang dominan dalam kutipan teks cerita tersebut adalah….",
+            "options": {
+                "A": "tepi hutan",
+                "B": "perkampungan kecil",
+                "C": "warung beratapkan rumbia",
+                "D": "jalan setapak di antara pohon mahoni"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 63,
+            "question": "Bacalah teks berikut!1) Sudah seminggu ini Banu tidak masuk sekolah. Teman-temannya mulai bertanya-tanya. Ketika Rina dan Dito berkunjung ke rumahnya, mereka terkejut. Banu sedang duduk di kursi roda, kaki kirinya terbungkus perban tebal. \"Aku jatuh dari pohon jambu minggu lalu,\" kata Banu sambil tersenyum pahit. Rina langsung memeluknya. Dito hanya terdiam. (2) \"Tenang saja, aku akan baik-baik saja,\" ujar Banu mencoba menghibur. Rina mengusap air matanya. \"Tapi ujian praktik olahraga minggu depan, Ban. Kamu tidak bisa ikut.\" Banu tertawa kecil. \"Percuma menyesali sesuatu yang sudah terjadi. Yang penting tulangku tidak retak.\" (3) Keesokan harinya, Rina datang lagi. Kali ini ia membawa map berisi fotokopian catatan pelajaran. \"Ini untukmu, Ban. Biar kamu tidak ketinggalan.\" Banu menatap Rina lama. \"Kamu baik sekali, Rin. Tapi jalan ke sini jauh. Tidak usah repot-repot.\" Rina menggeleng. \"Kamu temanku. Sudah seharusnya aku membantu.\" (4) Dito yang sedari tadi diam di pintu akhirnya masuk. Ia menyerahkan sebuah bola bekas bertuliskan tanda tangan seluruh teman sekelas. \"Ini dari kami. Biar kamu semangat,\" kata Dito canggung. Banu tersenyum haru. \"Terima kasih, To. Kalian benar-benar sahabat sejati.\"Karakter Rina yang peduli terhadap sesama ditunjukkan nomor….",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4"
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 64,
+            "question": "Bacalah teks berikut!Gunung Merapi kembali menunjukkan aktivitasnya dalam sepekan terakhir. Balai Penyelidikan dan Pengembangan Teknologi Kebencanaan Geologi (BPPTKG) mencatat setidaknya 15 kali guguran lava pijar terjadi sejak Minggu malam hingga Senin dini hari. Guguran lava tersebut mengarah ke sektor selatan dan tenggara, tepatnya ke aliran Sungai Boyong dan Sungai Krasak. Masyarakat di sekitar lereng gunung diminta waspada terhadap potensi awan panas guguran yang dapat menyusuri aliran sungai tersebut.Selain guguran lava, BPPTKG juga merekam 15 kali gempa hembusan dan 9 kali gempa tremor harmonik dengan amplitudo 0,5 hingga 6 milimeter. Status Gunung Merapi saat ini masih berada di Level II atau Waspada. Meskipun demikian, pihak BPPTKG mengimbau wisatawan untuk tidak melakukan pendakian ke area kawah dalam radius 3 kilometer. \"Potensi bahaya saat ini masih berupa guguran lava dan awan panas yang dapat terjadi sewaktu-waktu,\" ujar Kepala BPPTKG Hanik Humaida dalam keterangan persnya.Sementara itu, Kepala Badan Penanggulangan Bencana Daerah (BPBD) Kabupaten Sleman, Makwan, menyatakan bahwa jalur evakuasi sudah disiapkan. Dua titik pengungsian juga telah didirikan di balai desa terdekat. \"Kami sudah mengkoordinasikan dengan relawan dan tagana untuk siaga 24 jam,\" tambahnya. Hingga berita ini diturunkan, belum ada laporan warga yang mengungsi. Sebagian besar warga memilih tetap tinggal di rumah masing-masing sambil memantau perkembangan informasi dari radio komunitas dan pengeras suara masjid.Pernyataan yang sesuai dengan isi teks tersebut adalah....",
+            "options": {
+                "A": "Gunung Merapi tercatat mengalami 15 kali guguran lava pijar dalam waktu dua hari penuh.",
+                "B": "Status aktivitas Gunung Merapi saat ini sudah meningkat dan berada di Level III atau Siaga.",
+                "C": "Masyarakat dan wisatawan diimbau untuk tidak mendekati area kawah dalam radius 3 kilometer.",
+                "D": "Sebagian besar warga di sekitar lereng Gunung Merapi sudah mulai mengungsi ke balai desa terdekat."
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 65,
+            "question": "Perhatikan poster berikut! Sumber: https://rsusemararatih.co.id/media-promosi/Pernyataan yang sesuai dengan isi poster di atas adalah....",
+            "options": {
+                "A": "Olahraga pagi dapat mengontrol hormon lapar sehingga nafsu makan tidak berlebihan.",
+                "B": "Olahraga pagi secara instan dapat membakar kalori secara ekstrem saat beraktivitas.",
+                "C": "Olahraga pagi membuat tubuh cepat mengantuk sehingga menjadi sulit tidur di malam hari.",
+                "D": "Olahraga pagi yang dilakukan sesekali dapat meningkatkan kelelahan fisik sepanjang hari."
+            },
+            "answer": "A",
+            "images": [
+                "images/bitmap_234.png"
+            ]
+        },
+        {
+            "id": 66,
+            "question": "Bacalah teks berikut!Sejak dua tahun terakhir, Rianti dikenal sebagai salah satu food vlogger yang cukup berpengaruh di kotanya. Setiap akhir pekan, ia menyempatkan diri untuk berkeliling mencari kuliner-kuliner unik yang tersembunyi di gang-gang sempit. Bukan sekadar makan dan merekam, Rianti juga menuliskan pengalaman rasa, suasana tempat, hingga sejarah singkat dagangan yang ia santap. Tak heran jika para pelaku UMKM kuliner mulai meliriknya sebagai mitra promosi.Suatu sore, Rianti menerima pesan singkat dari seorang pemilik warung soto langganannya. \"Kak, besok saya mau tutup warung. Sudah dua minggu ini pembeli sepi. Ongkos naik terus, tapi dagangan tidak laku,\" tulis pemilik warung dengan nada putus asa. Rianti merasa terenyuh. Ia kenal betul warung soto itu—kuahnya gurih, dagingnya empuk, dan harganya bersahabat. Hanya saja, lokasinya memang agak tersembunyi.Tanpa pikir panjang, Rianti pun membuat konten spesial tentang warung soto tersebut. Ia mengemasnya dengan gaya yang hangat dan apa adanya. Dalam dua hari, video itu ditonton lebih dari seratus ribu kali. Warung soto itu pun ramai kembali. \"Terima kasih, Kak. Kamu benar-benar juru selamat bagi kami,\" ucap pemilik warung dengan mata berkaca-kaca. Rianti hanya tersenyum. Ia sadar bahwa sebagai jembatan antara pedagang kecil dan pembeli, ia memiliki tanggung jawab sosial yang tak bisa diabaikan begitu saja.Makna kata juru selamat pada teks tersebut adalah….",
+            "options": {},
+            "answer": "B",
+            "content_blocks": [
+                "Bacalah teks berikut!Sejak dua tahun terakhir, Rianti dikenal sebagai salah satu food vlogger yang cukup berpengaruh di kotanya. Setiap akhir pekan, ia menyempatkan diri untuk berkeliling mencari kuliner-kuliner unik yang tersembunyi di gang-gang sempit. Bukan sekadar makan dan merekam, Rianti juga menuliskan pengalaman rasa, suasana tempat, hingga sejarah singkat dagangan yang ia santap. Tak heran jika para pelaku UMKM kuliner mulai meliriknya sebagai mitra promosi.Suatu sore, Rianti menerima pesan singkat dari seorang pemilik warung soto langganannya. \"Kak, besok saya mau tutup warung. Sudah dua minggu ini pembeli sepi. Ongkos naik terus, tapi dagangan tidak laku,\" tulis pemilik warung dengan nada putus asa. Rianti merasa terenyuh. Ia kenal betul warung soto itu—kuahnya gurih, dagingnya empuk, dan harganya bersahabat. Hanya saja, lokasinya memang agak tersembunyi.Tanpa pikir panjang, Rianti pun membuat konten spesial tentang warung soto tersebut. Ia mengemasnya dengan gaya yang hangat dan apa adanya. Dalam dua hari, video itu ditonton lebih dari seratus ribu kali. Warung soto itu pun ramai kembali. \"Terima kasih, Kak. Kamu benar-benar juru selamat bagi kami,\" ucap pemilik warung dengan mata berkaca-kaca. Rianti hanya tersenyum. Ia sadar bahwa sebagai jembatan antara pedagang kecil dan pembeli, ia memiliki tanggung jawab sosial yang tak bisa diabaikan begitu saja.Makna kata juru selamat pada teks tersebut adalah….",
+                "A.B.C.D.",
+                "orang yang bekerja menyelamatkan korban bencanaseseorang yang menolong orang lain dari kesulitan ekonomipetugas keamanan yang melindungi wargapihak yang memberikan pertolongan pertama pada kecelakaan"
+            ],
+            "options_raw": "orang yang bekerja menyelamatkan korban bencanaseseorang yang menolong orang lain dari kesulitan ekonomipetugas keamanan yang melindungi wargapihak yang memberikan pertolongan pertama pada kecelakaan",
+            "images": []
+        },
+        {
+            "id": 67,
+            "question": "Perhatikan teks berikut!Gempa bumi tektonik terjadi karena pergerakan lempeng-lempeng kerak bumi. Lempeng-lempeng ini saling mendorong, menarik, atau bergesekan satu sama lain. Ketika tekanan yang terkumpul di sepanjang patahan (sesar) melebihi kekuatan batuan, batuan tersebut akan patah dan melepaskan energi dalam bentuk gelombang seismik. Gelombang inilah yang menyebabkan getaran di permukaan bumi yang kita rasakan sebagai gempa. Wilayah yang berada di dekat batas lempeng, seperti Indonesia, memiliki potensi gempa tektonik yang tinggi karena berada di zona pertemuan tiga lempeng besar dunia, yaitu Lempeng Indo-Australia, Lempeng Eurasia, dan Lempeng Pasifik.Makna kata lempeng pada teks tersebut adalah….",
+            "options": {},
+            "answer": "B",
+            "content_blocks": [
+                "Perhatikan teks berikut!Gempa bumi tektonik terjadi karena pergerakan lempeng-lempeng kerak bumi. Lempeng-lempeng ini saling mendorong, menarik, atau bergesekan satu sama lain. Ketika tekanan yang terkumpul di sepanjang patahan (sesar) melebihi kekuatan batuan, batuan tersebut akan patah dan melepaskan energi dalam bentuk gelombang seismik. Gelombang inilah yang menyebabkan getaran di permukaan bumi yang kita rasakan sebagai gempa. Wilayah yang berada di dekat batas lempeng, seperti Indonesia, memiliki potensi gempa tektonik yang tinggi karena berada di zona pertemuan tiga lempeng besar dunia, yaitu Lempeng Indo-Australia, Lempeng Eurasia, dan Lempeng Pasifik.Makna kata lempeng pada teks tersebut adalah….",
+                "A.B.C.D.",
+                "benda tipis berbentuk pipih yang terbuat dari tanah liat, logam, atau bahan lainnyabagian padat dari kerak bumi yang terapung di atas lapisan astenosfer yang cairlapisan terluar bumi yang terdiri atas batuan padat dan tempat tinggal makhluk hiduppiringan kecil yang digunakan untuk menyajikan makanan dalam jumlah sedikit"
+            ],
+            "options_raw": "benda tipis berbentuk pipih yang terbuat dari tanah liat, logam, atau bahan lainnyabagian padat dari kerak bumi yang terapung di atas lapisan astenosfer yang cairlapisan terluar bumi yang terdiri atas batuan padat dan tempat tinggal makhluk hiduppiringan kecil yang digunakan untuk menyajikan makanan dalam jumlah sedikit",
+            "images": []
+        },
+        {
+            "id": 68,
+            "question": "Cermatilah teks berikut!Alkisah, di sebuah desa di tepi hutan, hiduplah seorang pemuda bernama Bayu. Ia dikenal sebagai pemuda yang rajin dan jujur. Suatu hari, Bayu menemukan sebuah kantong kulit yang tergeletak di pinggir jalan setapak dekat sungai. Di dalam kantong itu terdapat lima keping emas dan sebuah cincin batu akik hijau. Bayu semula ingin menyimpannya, tapi hatinya tidak tenang. Ia pun memutuskan untuk menunggu pemilik kantong itu datang.Tiga jam berlalu, seorang lelaki tua tampak berjalan tergesa-gesa sambil membungkuk-bungkuk memeriksa semak-semak di tepi jalan. Wajahnya tampak cemas. Bayu segera menghampiri. \"Permisi, Kek. Apakah Kakek kehilangan sesuatu?\" tanya Bayu. \"Iya, Nak. Aku kehilangan kantong kulit berisi lima keping emas dan sebuah cincin pusaka. Cincin itu satu-satunya kenangan dari istriku yang sudah meninggal,\" jawab lelaki tua itu dengan suara bergetar.Bayu pun mengembalikan kantong tersebut. Lelaki tua itu sangat gembira. Ia hendak memberikan dua keping emas kepada Bayu sebagai hadiah, tetapi Bayu menolaknya. \"Saya tidak butuh imbalan, Kek. Melihat Kakek senang sudah cukup bagi saya,\" ujar Bayu. Lelaki tua itu tersenyum. \"Anak muda, kejujuranmu luar biasa. Besok, datanglah ke rumahku di ujung desa. Aku ingin berterima kasih dengan cara yang lebih pantas.\"Keesokan harinya, Bayu datang ke rumah lelaki tua itu. Betapa terkejutnya Bayu ketika mengetahui bahwa lelaki tua itu adalah saudagar kaya yang selama ini dicari-cari oleh kepala desa untuk menjadi donatur pembangunan jembatan. Karena terkesan dengan kejujuran Bayu, saudagar itu tidak hanya menyumbang untuk jembatan, tetapi juga mengangkat Bayu sebagai pengelola keuangan desa. Bayu pun menjalankan amanah itu dengan sebaik-baiknya.Peristiwa penting yang dialami tokoh Bayu adalah….",
+            "options": {
+                "A": "Bayu menemukan kantong berisi emas – disimpan – lelaki tua mencarinya – Bayu mengembalikan – mendapat hadiah – menjadi saudagar kaya.",
+                "B": "Bayu menemukan kantong berisi emas – menunggu pemiliknya – mengembalikan kepada lelaki tua – menolak hadiah – diundang ke rumah lelaki tua – diangkat menjadi pengelola keuangan desa.",
+                "C": "Bayu menemukan kantong berisi emas – langsung menyerahkan ke kepala desa – lelaki tua mengambilnya – lelaki tua marah karena ada emas yang hilang – Bayu diminta mengganti – Bayu menjadi miskin.",
+                "D": "Bayu kehilangan kantong berisi emas – mencari ke mana-mana – bertemu lelaki tua yang menemukannya – lelaki tua mengembalikan – Bayu memberi hadiah – lelaki tua menjadi pengelola keuangan desa."
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 69,
+            "question": "Perhatikan teks berikut!Padi sebagai Sumber Pangan UtamaPadi merupakan tanaman yang sangat penting bagi kehidupan manusia, terutama di Indonesia. Padi biasanya ditanam di lahan sawah yang memiliki air cukup. Pertumbuhan padi dipengaruhi oleh beberapa faktor, seperti kualitas tanah, ketersediaan air, dan sinar matahari. Padi yang sudah dipanen akan diproses menjadi beras, kemudian dimasak menjadi nasi sebagai makanan pokok. Selain itu, jerami hasil panen dapat dimanfaatkan untuk pakan ternak atau bahan kerajinan. Dalam proses penanaman padi, petani perlu melakukan perawatan seperti pengairan, pemupukan, dan pengendalian hama agar hasil panen maksimal.Berdasarkan teks tersebut, bagan yang tepat adalah….",
+            "options": {},
+            "answer": "B",
+            "content_blocks": [
+                "Perhatikan teks berikut!Padi sebagai Sumber Pangan UtamaPadi merupakan tanaman yang sangat penting bagi kehidupan manusia, terutama di Indonesia. Padi biasanya ditanam di lahan sawah yang memiliki air cukup. Pertumbuhan padi dipengaruhi oleh beberapa faktor, seperti kualitas tanah, ketersediaan air, dan sinar matahari. Padi yang sudah dipanen akan diproses menjadi beras, kemudian dimasak menjadi nasi sebagai makanan pokok. Selain itu, jerami hasil panen dapat dimanfaatkan untuk pakan ternak atau bahan kerajinan. Dalam proses penanaman padi, petani perlu melakukan perawatan seperti pengairan, pemupukan, dan pengendalian hama agar hasil panen maksimal.Berdasarkan teks tersebut, bagan yang tepat adalah….",
+                "A.B.C.D.",
+                "Padi├─ Tempat tumbuh: Gurun├─ Faktor: Tanpa air & tanpa sinar matahari├─ Hasil: Jerami saja└─ Perawatan: Tidak perluPadi├─ Tempat tumbuh: Sawah├─ Faktor pertumbuhan: Tanah, air, sinar matahari├─ Hasil: Beras → nasi + jerami (pakan/kerajinan)└─ Perawatan: Pengairan, pemupukan, pengendalian hamaPadi├─ Tempat tumbuh: Dalam rumah├─ Hasil: Bunga hias├─ Faktor: Tidak jelas└─ Perawatan: Tidak adaPadi├─ Tempat tumbuh: Air laut├─ Hasil: Ikan├─ Faktor: Garam tinggi└─ Perawatan: Memancing"
+            ],
+            "options_raw": "Padi├─ Tempat tumbuh: Gurun├─ Faktor: Tanpa air & tanpa sinar matahari├─ Hasil: Jerami saja└─ Perawatan: Tidak perluPadi├─ Tempat tumbuh: Sawah├─ Faktor pertumbuhan: Tanah, air, sinar matahari├─ Hasil: Beras → nasi + jerami (pakan/kerajinan)└─ Perawatan: Pengairan, pemupukan, pengendalian hamaPadi├─ Tempat tumbuh: Dalam rumah├─ Hasil: Bunga hias├─ Faktor: Tidak jelas└─ Perawatan: Tidak adaPadi├─ Tempat tumbuh: Air laut├─ Hasil: Ikan├─ Faktor: Garam tinggi└─ Perawatan: Memancing",
+            "images": []
+        },
+        {
+            "id": 70,
+            "question": "Bacalah teks berikut!Matahari baru saja terbit ketika Rani tiba di stasiun kereta tua itu. Ia membawa sebuah koper kecil dan sebuah ransel lusuh. Langkahnya terhenti di depan papan pengumuman kedatangan. \"Kereta Api Senja Utama dari Jakarta diperkirakan tiba pukul 07.30,\" tulisnya. Rani tersenyum kecil. Delapan belas tahun ia meninggalkan kota ini. Delapan belas tahun pula ia tak pernah mendengar suara adiknya, Dika. Sekarang ia pulang. Bukan karena rindu, tapi karena sepucuk surat dari tetangga yang mengatakan bahwa rumah orang tuanya akan digusur bulan depan. Rani duduk di bangku panjang besi yang sudah berkarat. Tangannya gemas memegang ujung ransel. Ia tidak tahu bagaimana reaksi Dika nanti. Terakhir mereka bertemu, Dika masih duduk di bangku SD dengan mata sembab setelah ayah mereka meninggal. Rani memilih pergi merantau karena tak sanggup melihat kemiskinan keluarganya. Kini ia kembali dengan tabungan pas-pasan dan rasa bersalah yang tak pernah benar-benar hilang.Kutipan teks tersebut termasuk bagian….",
+            "options": {
+                "A": "leraian",
+                "B": "klimaks",
+                "C": "pengenalan",
+                "D": "penyelesaian"
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 71,
+            "question": "Perhatikan grafik berikut! Berdasarkan grafik di atas, pernyataan yang benar mengenai isi grafik tersebut adalah.... Sumber: https://insight.kontan.co.id/news/laju-pertumbuhan-melambat-jumlah-penduduk-indonesia-masih-terbesar-keempat-dunia",
+            "options": {
+                "A": "Jumlah total penduduk Indonesia mengalami peningkatan dari tahun 2015 hingga 2025.",
+                "B": "Laju pertumbuhan penduduk Indonesia cenderung mengalami kenaikan yang pesat setiap tahunnya.",
+                "C": "Grafik garis biru menunjukkan bahwa persentase pertumbuhan penduduk selalu stabil tanpa perubahan.",
+                "D": "Jumlah penduduk Indonesia mengalami penurunan drastis terhitung sejak tahun 2020."
+            },
+            "answer": "A",
+            "images": [
+                "images/bitmap_211.png"
+            ]
+        },
+        {
+            "id": 72,
+            "question": "Perhatikan teks berikut!Obesitas pada anak tidak terjadi secara tiba-tiba. Ada tiga faktor utama yang menjadi penyebabnya. Faktor pertama adalah pola makan yang tidak seimbang, seperti konsumsi makanan cepat saji yang tinggi gula, garam, dan lemak, serta rendah serat. Faktor kedua adalah kurangnya aktivitas fisik, di mana anak lebih banyak menghabiskan waktu di depan gawai daripada bermain di luar. Faktor ketiga adalah faktor genetik dan hormonal, meskipun pengaruhnya tidak sebesar dua faktor sebelumnya. Jika ketiga faktor ini tidak segera diatasi, anak berisiko mengalami berbagai penyakit kronis seperti diabetes tipe 2, tekanan darah tinggi, dan gangguan jantung di usia dini.Gagasan pokok teks tersebut adalah....",
+            "options": {},
+            "answer": "B",
+            "content_blocks": [
+                "Perhatikan teks berikut!Obesitas pada anak tidak terjadi secara tiba-tiba. Ada tiga faktor utama yang menjadi penyebabnya. Faktor pertama adalah pola makan yang tidak seimbang, seperti konsumsi makanan cepat saji yang tinggi gula, garam, dan lemak, serta rendah serat. Faktor kedua adalah kurangnya aktivitas fisik, di mana anak lebih banyak menghabiskan waktu di depan gawai daripada bermain di luar. Faktor ketiga adalah faktor genetik dan hormonal, meskipun pengaruhnya tidak sebesar dua faktor sebelumnya. Jika ketiga faktor ini tidak segera diatasi, anak berisiko mengalami berbagai penyakit kronis seperti diabetes tipe 2, tekanan darah tinggi, dan gangguan jantung di usia dini.Gagasan pokok teks tersebut adalah....",
+                "A.B.C.D.",
+                "dampak obesitas pada anak terhadap kesehatan jangka panjangtiga faktor utama penyebab obesitas pada anakpentingnya aktivitas fisik untuk mencegah obesitasperan genetik dan hormonal dalam kasus obesitas anak"
+            ],
+            "options_raw": "dampak obesitas pada anak terhadap kesehatan jangka panjangtiga faktor utama penyebab obesitas pada anakpentingnya aktivitas fisik untuk mencegah obesitasperan genetik dan hormonal dalam kasus obesitas anak",
+            "images": []
+        },
+        {
+            "id": 73,
+            "question": "Bacalah teks berikut!\"Pak, saya sudah tiga kali datang ke kantor ini untuk mengurus KTP. Setiap kali, Bapak bilang blangkonya habis. Sekarang bagaimana lagi?\" tanya Amir dengan nada sedikit meninggi. Pegawai di balik meja itu hanya mengangkat bahu tanpa menatap Amir. \"Ya sudah, coba minggu depan lagi. Datangnya jangan sore-sore.\" Amir menghela napas panjang. \"Bapak tahu sendiri saya harus cuti setiap kali mengurus ini. Padahal toko saya cuma buka pagi sampai siang.\" Pegawai itu tetap santai sambil membuka ponselnya. \"Bukan urusan saya, Pak. Kalau tidak sabar, silakan ke ruang kepala desa. Tapi beliau juga jarang masuk.\" Amir mengepalkan tangan, tapi segera mengendurkan lagi. Ia merasa sudah tidak ada gunanya berdebat dengan orang yang sama sekali tidak peduli pada tugasnya.Karakter tokoh pegawai pada teks tersebut adalah....",
+            "options": {
+                "A": "kepala dingin",
+                "B": "keras kepala",
+                "C": "besar kepala",
+                "D": "kepala udang"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 74,
+            "question": "Bacaan berikut untuk menjawab soal nomor 74 – 75.Cahaya di Balik JendelaMarni adalah seorang gadis buta yang tinggal sendirian di sebuah rumah kecil dekat stasiun kereta tua. Sejak kecil, ia kehilangan penglihatannya akibat demam tinggi. Meskipun demikian, telinganya sangat tajam. Setiap pagi, ia selalu duduk di dekat jendela kamarnya untuk mendengarkan suara dunia luar: kicau burung, deru kereta yang lewat, dan suara langkah kaki orang yang berjalan di trotoar.Suatu hari, seorang pemuda bernama Reno pindah ke rumah seberang. Reno adalah seorang pelukis jalanan yang sedang mengalami masa sulit. Lukisannya tidak pernah laku, dan ia mulai kehilangan semangat untuk berkarya. Suatu sore, Reno duduk di teras rumahnya sambil merenung. Dari kejauhan, ia mendengar suara Marni yang sedang tersenyum sendiri sambil memegang secangkir teh hangat.\"Halo, siapa di sana?\" sapa Marni dengan ramah.\"Reno. Aku tetangga barumu,\" jawab Reno sedikit malas.\"Apa yang sedang kamu lakukan, Reno?\" tanya Marni lagi.\"Tidak ada. Hanya duduk merenungkan kegagalan,\" sahutnya sinis.Marni tertawa kecil. \"Aku tidak bisa melihat dunia, tapi aku bisa merasakan bahwa hari ini indah. Ada sinar matahari yang hangat di pipiku. Kamu juga pasti bisa merasakannya.\"Sejak saat itu, setiap sore mereka berbincang dari balik jendela masing-masing. Marni selalu bertanya tentang warna-warna langit, bentuk awan, dan bagaimana senja terlihat dari mata Reno. Tanpa sadar, Reno mulai melukis lagi. Ia melukis apa yang didengarnya dari Marni: suara burung, hangatnya teh, dan kebahagiaan sederhana.\"Lukisanmu indah, Reno. Aku bisa mendengar warnanya,\" kata Marni suatu hari.Reno tersentak. Belum pernah ada yang mengatakan seperti itu padanya. Karya-karyanya yang semula suram mulai berubah cerah. Reno akhirnya menggelar pameran kecil di halaman depan rumahnya. Warga sekitar penasaran dan datang melihat. Beberapa lukisan bahkan dibeli oleh pengunjung.Suatu malam, Reno mengetuk pintu rumah Marni. \"Marni, aku ingin melukismu. Aku ingin semua orang tahu bahwa kau adalah cahaya di balik jendela yang menyelamatkanku.\"Marni tersenyum. \"Aku tidak butuh dilihat, Reno. Aku hanya ingin kau terus melukis.\" Konflik yang dialami tokoh Reno dalam cerita tersebut disebabkan oleh....",
+            "options": {
+                "A": "Reno pindah ke rumah seberang Marni yang buta sehingga ia merasa terganggu.",
+                "B": "Lukisan Reno tidak pernah laku dan ia kehilangan semangat berkarya.",
+                "C": "Reno tidak suka karena Marni selalu bertanya tentang warna langit dan bentuk awan.",
+                "D": "Reno sedang mengalami masa sulit dalam kehidupan seninya."
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 75,
+            "question": "Bacalah teks berikut!Masa remaja merupakan masa peralihan dari anak-anak menuju dewasa yang ditandai dengan berbagai perubahan, baik fisik, emosional, maupun sosial. Pada masa ini, remaja sering mengalami perubahan suasana hati yang cepat, rasa ingin tahu yang tinggi, serta pencarian jati diri. Kondisi tersebut membuat remaja rentan mengalami tekanan atau stres, terutama jika tidak mendapatkan dukungan dari keluarga dan lingkungan sekitar.Kesehatan mental pada remaja menjadi hal yang sangat penting untuk diperhatikan. Kesehatan mental yang baik dapat membantu remaja lebih mudah berkonsentrasi dalam belajar, berinteraksi dengan teman, serta mengambil keputusan dengan bijak. Sebaliknya, jika kesehatan mental terganggu, remaja dapat mengalami penurunan prestasi, menarik diri dari pergaulan, bahkan merasa tidak percaya diri.Oleh karena itu, peran keluarga, guru, dan lingkungan sangat dibutuhkan untuk memberikan dukungan, perhatian, serta pemahaman agar remaja dapat melewati masa perkembangannya dengan baik.Berdasarkan teks di atas, pernyataan yang benar adalah....",
+            "options": {
+                "A": "Masa remaja hanya ditandai oleh perubahan fisik saja tanpa melibatkan perubahan emosional.",
+                "B": "Kesehatan mental yang baik membantu remaja lebih mudah berkonsentrasi dalam belajar dan berinteraksi sosial.",
+                "C": "Remaja sama sekali tidak membutuhkan dukungan dari keluarga selama masa peralihan berlangsung.",
+                "D": "Gangguan kesehatan mental pada remaja dapat memicu peningkatan prestasi belajar secara drastis."
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 76,
+            "question": "Bacalah teks berikut ini!Kejutan untuk Pak AliPak Ali dikenal sebagai sosok yang ringan tangan di desanya. Tak heran, saat rumahnya terkena musibah kebakaran, para tetangga segera datang membantu tanpa diminta. Mereka bergotong royong membangun kembali rumah Pak Ali.Anak Pak Ali, Budi, yang saat ini sedang merantau di kota, langsung angkat kaki dari pekerjaannya setelah mendengar kabar tersebut demi menemani sang ayah. Meskipun Pak Ali sedang tertimpa musibah, ia tetap lapang dada menerima kenyataan. Ia percaya bahwa di balik kesulitan pasti ada hikmah yang luar biasa.Berdasarkan teks tersebut, pernyataan yang tepat mengenai makna ungkapan adalah ….",
+            "options": {
+                "A": "Ungkapan \"ringan tangan\" berarti Pak Ali sering menggunakan kekerasan terhadap orang lain.",
+                "B": "Ungkapan \"lapang dada\" berarti Pak Ali merasa sangat gembira karena rumahnya terbakar.",
+                "C": "Ungkapan \"angkat kaki\" berarti Budi segera meninggalkan pekerjaannya di kota untuk pulang menemui ayahnya.",
+                "D": "Ungkapan \"ringan tangan\" berarti Pak Ali memiliki tenaga yang sangat kuat untuk bekerja."
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 77,
+            "question": "Perhatikan pernyataan-pernyataan berikut! (1)(2)(3)(4) Perubahan cuaca yang ekstrem akhir-akhir ini menyebabkan banyak daerah mengalami banjir dan tanah longsor. Curah hujan yang tinggi membuat sungai meluap dan tidak mampu menampung air. Akibatnya, rumah warga terendam air sehingga aktivitas sehari-hari menjadi terganggu. Pemerintah kemudian memberikan bantuan kepada para korban bencana tersebut. Kalimat yang menunjukkan hubungan sebab-akibat yang ditandai dengan kata hubung konjungsi penanda akibat secara langsung terdapat pada nomor....",
+            "options": {
+                "A": "(1) dan (2)",
+                "B": "(2) dan (4)",
+                "C": "(3) saja",
+                "D": "(4) saja"
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 78,
+            "question": "Perhatikan teks berikut!(1) Banyak orang menganggap belajar hanya bisa dilakukan di sekolah, padahal belajar dapat terjadi di mana saja, termasuk di rumah dan lingkungan sekitar. (2) Membaca buku merupakan salah satu cara untuk menambah pengetahuan dan wawasan. (3) Namun, tidak semua orang memiliki kebiasaan membaca secara rutin karena lebih tertarik pada hiburan digital. (4) Oleh karena itu, perlu adanya kesadaran untuk menyeimbangkan antara hiburan dan kegiatan belajar.Kalimat yang menunjukkan hubungan pertentangan dalam teks terdapat pada nomor....",
+            "options": {
+                "A": "(1)",
+                "B": "(2)",
+                "C": "(3)",
+                "D": "(4)"
+            },
+            "answer": "A",
+            "images": []
+        },
+        {
+            "id": 79,
+            "question": "Bacalah teks berikut!Dalam beberapa tahun terakhir, penggunaan dompet digital atau e-wallet di Indonesia mengalami peningkatan yang sangat pesat. Kemudahan bertransaksi menjadi salah satu alasan utama masyarakat mulai beralih dari pembayaran tunai ke nontunai. Selain itu, banyak aplikasi dompet digital menawarkan promosi seperti cashback, diskon, dan poin reward yang menarik minat pengguna. Tidak hanya itu, fitur keamanan pada aplikasi juga terus ditingkatkan agar pengguna merasa lebih aman saat bertransaksi.Penggunaan dompet digital kini tidak hanya terbatas di kota besar atau pusat perbelanjaan modern, tetapi juga sudah menjangkau berbagai sektor masyarakat. Warung kecil, pedagang kaki lima, hingga jasa transportasi dan parkir mulai menerima pembayaran secara digital. Hal ini menunjukkan bahwa teknologi keuangan semakin mudah diakses oleh berbagai lapisan masyarakat.Fenomena tersebut secara perlahan mengubah kebiasaan masyarakat dalam bertransaksi. Jika sebelumnya masyarakat lebih sering menggunakan uang tunai, kini banyak yang mulai terbiasa menggunakan metode pembayaran digital dalam kehidupan sehari-hari.Berdasarkan teks di atas, pernyataan yang benar adalah....",
+            "options": {
+                "A": "Penggunaan dompet digital saat ini masih terbatas di kota besar dan pusat perbelanjaan modern saja.",
+                "B": "Fitur promosi seperti cashback dan diskon menjadi faktor yang menurunkan minat masyarakat.",
+                "C": "Kebiasaan masyarakat dalam bertransaksi mulai berubah secara perlahan dari tunai ke nontunai.",
+                "D": "Teknologi keuangan saat ini masih sulit diakses oleh pelaku usaha kecil seperti warung dan pedagang kaki lima."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 80,
+            "question": "Cermati kedua kutipan cerita berikut!Kutipan ISetelah bel pulang berbunyi, Dita segera merapikan buku-bukunya. Ia kemudian berjalan menuju taman sekolah untuk mencari udara segar. Di sana, ia melihat teman-temannya sedang bermain dan tertawa bersama. Tanpa disadari, Dita ikut tersenyum dan merasa lebih tenang setelah hari yang melelahkan di kelas. Ia memutuskan untuk duduk sejenak dan menikmati suasana sore itu.Kutipan IIBima terdiam sambil memegang medali juara lomba lari yang pernah ia menangkan saat masih di sekolah dasar. Ingatannya kembali pada hari perlombaan itu. Ia berlari sekuat tenaga di lintasan, bersaing dengan teman-temannya, hingga akhirnya berhasil menjadi yang tercepat. Suara sorakan penonton masih terasa jelas di pikirannya, membuatnya bangga akan pencapaian masa lalunya.Perbedaan pola pengembangan cerita pada kedua kutipan tersebut adalah….",
+            "options": {},
+            "answer": "A",
+            "content_blocks": [
+                "Cermati kedua kutipan cerita berikut!Kutipan ISetelah bel pulang berbunyi, Dita segera merapikan buku-bukunya. Ia kemudian berjalan menuju taman sekolah untuk mencari udara segar. Di sana, ia melihat teman-temannya sedang bermain dan tertawa bersama. Tanpa disadari, Dita ikut tersenyum dan merasa lebih tenang setelah hari yang melelahkan di kelas. Ia memutuskan untuk duduk sejenak dan menikmati suasana sore itu.Kutipan IIBima terdiam sambil memegang medali juara lomba lari yang pernah ia menangkan saat masih di sekolah dasar. Ingatannya kembali pada hari perlombaan itu. Ia berlari sekuat tenaga di lintasan, bersaing dengan teman-temannya, hingga akhirnya berhasil menjadi yang tercepat. Suara sorakan penonton masih terasa jelas di pikirannya, membuatnya bangga akan pencapaian masa lalunya.Perbedaan pola pengembangan cerita pada kedua kutipan tersebut adalah…."
+            ],
+            "images": [
+                "images/bitmap_181.png"
+            ]
+        },
+        {
+            "id": 81,
+            "question": "Cermati kutipan berikut!Membaca buku cerita setiap malam sebelum tidur memiliki banyak manfaat bagi anak-anak. Kegiatan ini dapat meningkatkan imajinasi dan kreativitas anak. Selain itu, membaca juga memperkaya kosakata serta melatih kemampuan berpikir kritis. Membaca buku cerita sebelum tidur membuat anak sulit tidur karena mata mereka menjadi lelah.Kalimat perbaikan yang tepat untuk Kalimat perbaikan yang tepat untuk mengganti kalimat terakhir (yang dicetak miring) agar paragraf tersebut menjadi padu adalah....",
+            "options": {
+                "A": "Dengan demikian, membaca buku cerita sebelum tidur sebaiknya dihindari karena merusak mata.",
+                "B": "Oleh karena itu, anak-anak lebih disarankan menonton televisi saja sebelum tidur agar lebih terhibur.",
+                "C": "Namun, kebiasaan membaca buku cerita ini sebaiknya segera dihentikan karena menyita waktu istirahat.",
+                "D": "Dengan demikian, kegiatan ini dapat menjadi kebiasaan positif yang mendukung kualitas tidur anak."
+            },
+            "answer": "D",
+            "images": []
+        },
+        {
+            "id": 82,
+            "question": "Cermati puisi berikut untuk menjawab soal nomor 82 – 83.Merdeka di Layar KitaBukan lagi bambu runcingBukan lagi jerit di medan perangKemerdekaan kini adalah sayapDi lautan digital yang membentangNamun hati-hati, ada badai hoaksAda jebakan ujaran kebencianLayar gawai berbisik, memecah persatuanMerah putih harus tetap jadi peganganKemerdekaan adalah ruang untuk bersuaraNamun, bukan berarti bebas tanpa batasAda tanggung jawab dalam setiap kataAda janji pada masa depan yang cerahDengarlah dentuman nada-nada merdekaDari karya anak bangsa yang berkreasiItulah suara batin yang takkan pernah matiTeruslah berkarya, merdeka dalam arti sejatiBerdasarkan puisi tersebut, pernyataan yang benar adalah....",
+            "options": {
+                "A": "Kemerdekaan saat ini digambarkan erat kaitannya dengan dunia digital, teknologi gawai, dan kebebasan berpendapat yang bertanggung jawab.",
+                "B": "Puisi tersebut menceritakan bahwa perjuangan fisik menggunakan senjata bambu runcing masih menjadi satu-satunya fokus utama saat ini.",
+                "C": "Penulis menyatakan bahwa setiap orang bebas menyebarkan berita hoaks dan ujaran kebencian di media sosial tanpa batas.",
+                "D": "Kemerdekaan diartikan sebagai kebebasan mutlak dalam bersuara tanpa perlu memikirkan tanggung jawab atas kata-kata yang diucapkan."
+            },
+            "answer": "A",
+            "images": []
+        },
+        {
+            "id": 83,
+            "question": "Larik bermajas dalam puisi tersebut terdapat pada…",
+            "options": {
+                "A": "bait pertama larik pertama",
+                "B": "bait kedua larik ketiga",
+                "C": "bait ketiga larik kedua",
+                "D": "bait keempat larik pertama"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 84,
+            "question": "Cermati puisi berikut!Suara Alam Pagi HariEmbun jatuh di ujung daunBurung berkicau menyambut MentariAngin berlari melewati pepohonanCahaya pagi menyapa bumi perlahanKalimat yang mengandung citraan pendengaran terdapat pada baris ke….",
+            "options": {
+                "A": "(1)",
+                "B": "(2)",
+                "C": "(3)",
+                "D": "(4)"
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 85,
+            "question": "Cermatilah kutipan berikut!Setiap malam sebelum tidur, Dika selalu meluangkan waktu untuk belajar. Ia merapikan buku-bukunya terlebih dahulu, kemudian membaca kembali materi pelajaran yang telah dipelajari di sekolah. Jika ada materi yang belum dipahami, ia mencatatnya untuk ditanyakan kepada guru keesokan harinya. Kebiasaan ini ia lakukan secara rutin karena ia ingin mendapatkan hasil belajar yang baik. Orang tuanya sangat bangga melihat kedisiplinan Dika dalam belajar setiap hari.Berdasarkan kutipan cerita di atas, kebiasaan yang dilakukan Dika adalah….",
+            "options": {
+                "A": "Belajar setiap malam sebelum tidur",
+                "B": "Bermain bersama teman setiap malam",
+                "C": "Menonton televisi sebelum tidur",
+                "D": "Membantu orang tua setiap malam"
+            },
+            "answer": "A",
+            "images": []
+        },
+        {
+            "id": 86,
+            "question": "Bacalah kutipan cerita berikut!Dina dikenal sebagai siswa yang ramah dan rendah hati di sekolahnya. Ia selalu menyapa guru dan teman-temannya dengan sopan. Saat mengerjakan tugas kelompok, Dina tidak pernah mendominasi, tetapi justru mendengarkan pendapat teman-temannya terlebih dahulu. Jika ada teman yang kesulitan belajar, Dina dengan sabar menjelaskan materi yang belum dipahami.Pada saat pemilihan ketua kelas, Dina terpilih karena dianggap bijaksana. Namun, ia tidak merasa lebih unggul dari teman-temannya. Ia tetap mau bekerja sama dan tidak segan membantu membersihkan kelas meskipun bukan giliran tugasnya. Menurut Dina, semua siswa memiliki peran penting di kelas.Berdasarkan kutipan cerita di atas, pernyataan yang benar mengenai tokoh Dina adalah....",
+            "options": {
+                "A": "Dina merasa dirinya paling hebat dan lebih unggul sejak terpilih menjadi ketua kelas.",
+                "B": "Dina cenderung mendominasi dan memaksakan kehendaknya saat diskusi kelompok.",
+                "C": "Dina selalu mendengarkan pendapat orang lain dan membantu teman yang kesulitan dengan sabar.",
+                "D": "Dina hanya mau ikut membersihkan kelas jika tiba waktu giliran piketnya saja."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 87,
+            "question": "Cermatilah teks berikut!Energi angin merupakan salah satu sumber energi terbarukan yang mulai banyak dimanfaatkan di berbagai negara. Kincir angin digunakan untuk mengubah energi angin menjadi energi listrik yang dapat digunakan untuk kebutuhan sehari-hari seperti penerangan, pengairan, dan kebutuhan industri. Indonesia memiliki potensi energi angin yang cukup besar, terutama di daerah pesisir yang memiliki hembusan angin cukup kuat dan stabil. Pemanfaatan energi angin dapat mengurangi ketergantungan pada bahan bakar fosil serta membantu mengurangi pencemaran lingkungan. Namun, pengembangan energi angin masih menghadapi kendala seperti biaya pembangunan yang tinggi dan keterbatasan teknologi di beberapa daerah.Berdasarkan teks di atas, pernyataan yang benar adalah....",
+            "options": {
+                "A": "Pengembangan energi angin saat ini masih menghadapi kendala di bidang biaya dan teknologi.",
+                "B": "Indonesia sama sekali tidak memiliki potensi untuk mengembangkan energi angin di wilayahnya.",
+                "C": "Pemanfaatan energi angin justru meningkatkan pencemaran lingkungan dan ketergantungan pada bahan bakar fosil.",
+                "D": "Kincir angin digunakan untuk mengubah energi listrik menjadi energi angin untuk kebutuhan industri."
+            },
+            "answer": "A",
+            "images": []
+        },
+        {
+            "id": 88,
+            "question": "Bacalah teks berikut.Sepotong Roti untuk SenjaSetiap hari Senja kecil selalu membawa bekal dua potong roti ke sekolah. Satu potong untuk dirinya, satu potong lagi untuk teman sebangkunya, Roni, yang jarang membawa bekal karena orang tuanya sedang sakit. Roni tidak pernah meminta, tapi Senja dengan senang hati selalu menyisakan rotinya.Suatu hari, Roni pindah sekolah karena mengikuti orang tuanya yang mencari pekerjaan di kota lain. Senja sedih, tetapi ia tetap membawa dua potong roti setiap hari. \"Untuk siapa roti satu lagi, Sen?\" tanya Bu Guru suatu pagi.\"Aku belum tahu, Bu. Tapi aku yakin pasti ada yang membutuhkannya,\" jawab Senja sambil tersenyum.Ternyata benar. Di kelas sebelah, ada seorang anak baru bernama Tio yang jarang makan siang. Sejak hari itu, Senja memberikan rotinya kepada Tio. Tio sangat bersyukur dan perlahan-lahan menjadi lebih bersemangat belajar.Tahun-tahun berlalu. Senja tumbuh menjadi gadis dewasa yang tetap murah hati. Suatu hari, ia menerima surat dari Roni yang kini telah menjadi seorang dokter. \"Terima kasih, Senja. Dulu rotimu memberiku kekuatan untuk terus sekolah. Sekarang giliranku yang ingin membantu orang lain,\" tulis Roni dalam suratnya.Senja menangis haru. Ia tidak menyangka bahwa kebaikan kecil yang dilakukannya sejak kecil telah mengubah hidup dua orang temannya dan pada akhirnya juga mengubah hidup banyak pasien yang ditolong oleh Roni.Pesan moral yang dapat dipetik dari cerita \"Sepotong Roti untuk Senja\" adalah....",
+            "options": {
+                "A": "Kita harus selalu menyimpan makanan untuk diri sendiri agar tidak kekurangan.",
+                "B": "Kebaikan kecil yang dilakukan dengan tulus dapat memberi dampak besar bagi orang lain.",
+                "C": "Kita tidak boleh membantu teman yang tidak membawa bekal karena bukan tanggung jawab kita.",
+                "D": "Kebaikan hanya bermanfaat jika dilakukan kepada orang yang kita kenal dekat."
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 89,
+            "question": "Bacalah teks berikut untuk menjawab soal nomor 89 – 90.Sepatu butut itu KembaliHari itu hujan turun sangat deras. Budi, seorang pengantar koran, berlari tergesa-gesa menyusuri gang sempit. Sepatu bututnya sudah bolong di beberapa tempat, dan air mulai merembes masuk. Di tengah perjalanan, ia melihat seorang nenek tua terjatuh di selokan kecil karena tanah yang licin.Tanpa berpikir panjang, Budi segera menolong nenek itu. Ia memapahnya ke emperan toko yang kering. Nenek itu mengucapkan terima kasih berkali-kali. \"Kamu baik sekali, Nak. Tuhan akan membalas kebaikanmu,\" kata nenek itu lirih.Budi hanya tersenyum. Ia tidak pernah mengharap balasan. Sepatu bututnya basah kuyup, koran-koran di tasnya juga ikut basah. Hari itu ia tidak mendapat upah penuh karena korannya rusak. Namun, hatinya merasa lega karena bisa menolong.Satu minggu kemudian, seorang kurir datang ke rumah Budi. Ia mengantarkan sebuah kotak. Di dalamnya ada sepasang sepatu baru yang bagus dan sebuah amplop berisi uang. \"Ini dari seorang ibu yang pernah kau tolong minggu lalu,\" kata kurir itu. \"Beliau titip pesan: 'Sepatu bututmu sudah waktunya pensiun.'\"Budi terpaku. Sepasang sepatu baru itu persis dengan ukuran kakinya. Air matanya menetes. Ia tidak menyangka kebaikan kecilnya saat itu berbuah manis seminggu kemudian.Komentar yang sesuai dengan isi kutipan cerita tersebut adalah....",
+            "options": {
+                "A": "Budi adalah sosok yang tidak peduli dengan nasib orang lain karena ia lebih mementingkan korannya.",
+                "B": "Nenek yang ditolong Budi ternyata adalah orang kaya yang memiliki banyak uang dan suka menyombongkan diri.",
+                "C": "Cerita ini mengajarkan bahwa menolong sesama dengan ikhlas dapat mendatangkan balasan yang tak terduga.",
+                "D": "Budi sangat menyesal telah menolong nenek itu karena korannya basah dan ia tidak mendapat upah penuh."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 90,
+            "question": "Respons emosional yang dialami Budi saat menerima kiriman sepatu dan uang dari nenek yang pernah ditolongnya adalah….",
+            "options": {
+                "A": "Marah karena merasa dianggap miskin dan tidak mampu membeli sepatu sendiri.",
+                "B": "Kecewa karena yang datang hanya kurir, bukan nenek itu secara langsung.",
+                "C": "Terharu dan tidak menyangka kebaikannya dibalas dengan cara yang manis.",
+                "D": "Biasa saja karena ia sudah sering menerima hadiah dari orang yang ditolongnya."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 91,
+            "question": "Bacalah teks berikut dengan saksama!Setelah satu semester proses pembelajaran, guru mengadakan kegiatan evaluasi untuk mengetahui sejauh mana siswa memahami materi yang telah dipelajari. Kegiatan tersebut tidak hanya berupa tes tertulis, tetapi juga diskusi kelompok dan presentasi hasil kerja siswa. Guru kemudian mengamati kemampuan siswa dalam memahami konsep, bekerja sama, dan menyampaikan pendapat secara lisan. Hasil dari kegiatan evaluasi tersebut digunakan guru untuk memperbaiki metode pembelajaran pada semester berikutnya agar lebih efektif. Berdasarkan konteks cerita di atas, makna yang paling tepat dari istilah evaluasi adalah....",
+            "options": {
+                "A": "Kegiatan memberikan tugas tambahan agar siswa lebih rajin belajar.",
+                "B": "Proses menguji siswa melalui tes tertulis saja untuk menentukan nilai akhir.",
+                "C": "Proses menilai hasil belajar secara menyeluruh untuk mengetahui pencapaian dan memperbaiki pembelajaran.",
+                "D": "Kegiatan diskusi kelompok untuk melatih kerja sama siswa."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 92,
+            "question": "Bacalah teks berikut dengan saksama!Langit mulai merambat gelap ketika nelayan-nelayan itu mulai menarik jaringnya satu per satu. Ombak kecil menghantam lambung perahu kayu yang telah usang. Bau amis bercampur garam menyengat di sela-sela hembusan angin pantai. Dari kejauhan, suara mesin tempel yang tersendat-sendat terdengar seperti rintihan tua yang kehabisan napas. Di atas daratan, beberapa perempuan dengan nyiru di tangan sibuk menjemur hasil laut di atas para-para bambu. Asap tipis mengepul dari tungku darurat di belakang pondok-pondok reyot. Seekor kucing kampung lalu lalang mengais sisa-sisa ikan yang tercecer di papan pencucian.Berdasarkan kosakata yang digunakan dalam teks tersebut, latar tempat yang paling tepat adalah ....",
+            "options": {
+                "A": "Pasar tradisional di daerah pesisir",
+                "B": "Pelabuhan kapal feri di kota besar",
+                "C": "Pantai dengan aktivitas tambak udang",
+                "D": "Pemukiman nelayan di tepi pantai"
+            },
+            "answer": "D",
+            "images": []
+        },
+        {
+            "id": 93,
+            "question": "Bacalah teks berikut dengan saksama!Pemerintah Kabupaten Banyumas resmi meluncurkan program \"Sekolah Ramah Anak\" di 15 sekolah dasar pada Senin, 12 Maret 2024. Program ini bertujuan untuk menciptakan lingkungan belajar yang aman, nyaman, dan bebas dari perundungan. Dalam program tersebut, setiap sekolah wajib menyediakan satu ruang konseling yang dikelola oleh guru yang telah mendapat pelatihan khusus. Selain itu, pihak sekolah juga harus memasang papan pengaduan di tiga titik strategis, yaitu di depan ruang kepala sekolah, dekat kantin, dan area bermain. Peluncuran program ini dihadiri oleh Kepala Dinas Pendidikan Kabupaten Banyumas, perwakilan Komisi Perlindungan Anak Daerah, serta para kepala sekolah dari 15 SD tersebut. Program ini akan dievaluasi setiap tiga bulan sekali, dengan evaluasi pertama dijadwalkan pada bulan Juni 2024. Bagi sekolah yang berhasil menerapkan program dengan baik akan mendapatkan tambahan dana bantuan operasional sekolah sebesar Rp10.000.000.Berdasarkan teks tersebut, informasi penting yang tersurat adalah ....",
+            "options": {
+                "A": "Program Sekolah Ramah Anak sudah berjalan sejak bulan Januari 2024.",
+                "B": "Ruang konseling harus dikelola oleh guru yang sudah menikah dan memiliki anak.",
+                "C": "Evaluasi program akan dilakukan setiap enam bulan sekali oleh Dinas Pendidikan.",
+                "D": "Sekolah yang berhasil akan mendapat dana tambahan sebesar sepuluh juta rupiah."
+            },
+            "answer": "D",
+            "images": []
+        },
+        {
+            "id": 94,
+            "question": "Bacalah teks berikut dengan saksama!Kesiapsiagaan menghadapi bencana banjir terbagi menjadi tiga tahap. Pertama, tahap sebelum banjir berfokus pada persiapan barang-barang krusial. Selain menyiapkan dokumen penting di wadah kedap air dan tas darurat, setiap keluarga harus aktif memantau prakiraan cuaca agar tidak terkejut saat debit air meningkat.Kedua, tahap saat banjir. Menekankan pada keselamatan nyawa. Mematikan aliran listrik dan gas adalah hal pertama yang harus dilakukan guna mencegah korsleting atau ledakan. Saat evakuasi, warga dilarang meremehkan arus air. Berjalan di dalam air banjir sangat berbahaya karena selain risiko terseret air, ada ancaman terperosok ke lubang yang tidak terlihat atau tertimpa benda yang hanyut.Tahap terakhir, yaitu setelah banjir, berfokus pada pemulihan. Penggunaan alat pelindung seperti sepatu bot saat membersihkan sisa banjir sangat penting untuk menghindari luka dari benda tajam yang tertimbun lumpur. Selain itu, pembersihan dengan desinfektan wajib dilakukan untuk membunuh kuman penyakit. Langkah terakhir adalah melaporkan kerusakan rumah kepada pihak RT untuk keperluan pendataan. Pola pengembangan teks tersebut disusun berdasarkan ….",
+            "options": {},
+            "answer": "C",
+            "content_blocks": [
+                "Bacalah teks berikut dengan saksama!Kesiapsiagaan menghadapi bencana banjir terbagi menjadi tiga tahap. Pertama, tahap sebelum banjir berfokus pada persiapan barang-barang krusial. Selain menyiapkan dokumen penting di wadah kedap air dan tas darurat, setiap keluarga harus aktif memantau prakiraan cuaca agar tidak terkejut saat debit air meningkat.Kedua, tahap saat banjir. Menekankan pada keselamatan nyawa. Mematikan aliran listrik dan gas adalah hal pertama yang harus dilakukan guna mencegah korsleting atau ledakan. Saat evakuasi, warga dilarang meremehkan arus air. Berjalan di dalam air banjir sangat berbahaya karena selain risiko terseret air, ada ancaman terperosok ke lubang yang tidak terlihat atau tertimpa benda yang hanyut.Tahap terakhir, yaitu setelah banjir, berfokus pada pemulihan. Penggunaan alat pelindung seperti sepatu bot saat membersihkan sisa banjir sangat penting untuk menghindari luka dari benda tajam yang tertimbun lumpur. Selain itu, pembersihan dengan desinfektan wajib dilakukan untuk membunuh kuman penyakit. Langkah terakhir adalah melaporkan kerusakan rumah kepada pihak RT untuk keperluan pendataan. Pola pengembangan teks tersebut disusun berdasarkan ….",
+                "A.B.C.D.",
+                "Hubungan sebab-akibatPerbandingan dua kondisi berbedaUrutan langkah berdasarkan waktu kejadianPemaparan masalah dan solusi"
+            ],
+            "options_raw": "Hubungan sebab-akibatPerbandingan dua kondisi berbedaUrutan langkah berdasarkan waktu kejadianPemaparan masalah dan solusi",
+            "images": []
+        },
+        {
+            "id": 95,
+            "question": "Bacalah kutipan hikayat berikut dengan saksama!Alkisah, tersebutlah seorang raja besar di Negeri Ajam bernama Raja Indera Bungsu. Baginda mempunyai dua putra gagah perkasa, bernama Syah Peri dan Indera Bangsawan. Pada suatu hari, datanglah seorang pertapa sakti. Pertapa itu bertitah, \"Wahai kedua putra raja, di puncak gunung terdapat Burung Bayan Budiman. Siapa yang mendapatkannya akan menjadi raja di tujuh negeri. Namun, kalian harus melalui tujuh lapis rimba raya dan lautan api.\" Syah Peri pun berangkat terlebih dahulu. Di tengah rimba, ia bertemu seorang putri cantik yang sedang menangis. \"Tolonglah hamba, hamba diculik raksasa,\" kata putri itu. Syah Peri pun tergerak hatinya. Ia mengantarkan putri itu pulang ke negerinya, lalu kembali ke istana dan melupakan niatnya mencari burung tersebut. Adapun Indera Bangsawan, ia masuk rimba dari arah lain. Di tengah rimba, ia bertemu kakek tua kelaparan. Indera Bangsawan pun memberikan bekal makanannya. Kakek itu pun tersenyum, \"Budi baikmu tiada ternilai. Aku tunjukkan jalan pintas ke sarang burung itu.\" Indera Bangsawan pun berhasil mendapatkan Burung Bayan Budiman dan diangkat menjadi putra mahkota.Berdasarkan kutipan hikayat tersebut, simpulan nilai yang paling tepat adalah ....",
+            "options": {
+                "A": "Nilai kepatuhan tercermin pada Syah Peri yang menurut saja pada permintaan putri.",
+                "B": "Nilai kesabaran tercermin pada Indera Bangsawan yang tidak mengeluh selama perjalanan.",
+                "C": "Nilai tolong-menolong tercermin pada Indera Bangsawan yang menolong kakek dan mendapat balasan.",
+                "D": "Nilai kejujuran tercermin pada Syah Peri yang terus terang kepada adiknya bahwa ia gagal."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 96,
+            "question": "Bacalah kedua teks berikut dengan saksama!Teks 1 (Laporan Penelitian)Penelitian Universitas Gadjah Mada pada 2024 terhadap 2.000 responden di 10 kota besar menunjukkan 67% masyarakat lebih memilih membaca informasi melalui media sosial dibanding portal berita resmi. Sebanyak 45% responden mengaku tidak memverifikasi informasi sebelum membagikannya. Rata-rata waktu membaca buku hanya 12 menit per hari, sedangkan penggunaan media sosial mencapai 3,5 jam per hari. Ketua tim peneliti menyatakan kondisi ini dapat menurunkan literasi kritis dan meningkatkan kepercayaan terhadap berita hoaks. Penelitian tersebut merekomendasikan penguatan pendidikan literasi digital sejak sekolah dasar.Teks 2 (Wawancara dengan Kepala Dinas Pendidikan Kota Bandung)Menanggapi fenomena tersebut, Kepala Dinas Pendidikan Kota Bandung menyatakan sejak Januari 2024 pendidikan literasi digital telah dimasukkan dalam muatan lokal kelas 4–6 SD. Program ini meliputi pembelajaran membedakan hoaks, memverifikasi sumber informasi, dan etika bermedia sosial. Dinas Pendidikan juga bekerja sama dengan MAFINDO melatih 500 guru SD sebagai fasilitator literasi digital. Selain itu, direncanakan seminar bagi orang tua untuk mendukung kebiasaan bermedia yang sehat.Hubungan logis antara informasi dalam Teks 1 dan Teks 2 yang paling tepat adalah ....",
+            "options": {
+                "A": "Teks 2 menunjukkan rekomendasi dalam Teks 1 tentang penguatan literasi digital di sekolah dasar mulai diterapkan pada tingkat daerah.",
+                "B": "Teks 2 bertentangan dengan Teks 1 karena membuktikan kebiasaan membaca masyarakat sebenernya sudah baik melalui program literasi digital.",
+                "C": "Teks 1 hanya berisi opini peneliti, sedangkan Teks 2 memuat data empiris sehingga keduanya tidak berhubungan langsung.",
+                "D": "Teks 2 mengabaikan temuan Teks 1 karena program yang dijalankan berfokus pada guru, bukan pada peserta didik."
+            },
+            "answer": "A",
+            "images": []
+        },
+        {
+            "id": 97,
+            "question": "Bacalah teks berikut dengan saksama!Keysa dan Raka adalah dua sahabat di SMP Merdeka yang gemar memecahkan teka-teki. Mereka sering menjadi juara lomba cerdas cermat di sekolah. Suatu hari, mereka mendapat tugas membersihkan gedung tua peninggalan Belanda di belakang sekolah. Saat membersihkan, Raka tidak sengaja menginjak lantai yang longgar. Ternyata, ada papan lantai berukiran matahari yang bisa diangkat. Di bawahnya, terdapat lubang dengan tangga kayu menuju ruang bawah tanah. Tiga teman mereka sudah lari ketakutan. Raka ragu, \"Key, sebaiknya kita lapor ke kepala sekolah saja.\" Keysa tersenyum, \"Rak, ingat dulu kita pernah menemukan kotak harta karun di taman? Awalnya takut, ternyata isinya kelereng kuno dan uang logam. Aku yakin di sini juga ada yang menarik.\" Raka pun menurut. Mereka menuruni tangga dan menemukan sebuah peti besi kecil. Di atas peti terukir pertanyaan: \"Aku lahir dari api, tetapi aku mati di dalam air. Siapakah aku?\"Tiba-tiba terdengar suara gemuruh seperti mekanisme kuno yang bergerak. Raka panik, \"Key, kita harus cepat! Mungkin kita akan terkunci di sini!\" Keysa tetap tenang. Ia mengingat semua teka-teki yang pernah ia pecahkan. \"Aku tahu jawabannya, Rak!\" seru Keysa.Berdasarkan alur cerita dan karakter tokoh, prediksi yang paling logis tentang peristiwa yang akan terjadi selanjutnya adalah ...",
+            "options": {
+                "A": "Keysa dan Raka segera naik kembali karena takut ruangan itu runtuh.",
+                "B": "Keysa menjawab teka-teki dengan benar, lalu peti besi tersebut terbuka.",
+                "C": "Raka merebut ponsel Keysa untuk mencari jawaban di internet.",
+                "D": "Mereka mengabaikan peti dan mencari jalan keluar lain."
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 98,
+            "question": "Bacalah kutipan cerita fiksi berikut dengan saksama!Hujan sore itu turun seperti jutaan jarum yang dijatuhkan dari langit. Airnya menikam-nikam tanah yang sudah sekian lama haus akan sentuhan basah. Dari balik jendela kaca yang buram, Lia memperhatikan tetes-tetes air yang meluncur cepat bagaikan air mata langit yang tak mau berhenti menangis.Angin bertiup kencang, membawa serta aroma tanah basah yang khas. Daun-daun pohon mangga di halaman rumah menari-nari liar seolah kehilangan kendali. Sesekali, kilat menyambar di kejauhan seperti urat nadi raksasa yang berdenyut di balik kulit langit kelabu.Lia menghela napas panjang. Hatinya terasa seperti diremas-remas oleh tangan tak kasat mata. Kenangan tentang ibunya yang pergi setahun lalu kembali muncul, mengalir deras seperti banjir bandang yang tak bisa dibendung. \"Ibu... kapan kau pulang?\" bisiknya lirih, suaranya tertelan oleh gemuruh petir yang menggelegar.Di sudut ruangan, sesosok bayangan tampak terdiam. Itulah kakeknya, berdiri seperti patung tanpa suara. Matanya berkaca-kaca, menyimpan lautan kesedihan yang tak pernah tumpah. Kakek mengusap lembut kepala Lia, jemarinya yang keriput terasa hangat seperti secangkir teh jahe di malam yang dingin.Hujan mulai reda. Mentari sore menyembul dari balik awan, menyapa bumi dengan sinar keemasannya. Pelangi terbentang di ujung langit, bagaikan senyuman yang menghiasi wajah setelah tangisan panjang.Berdasarkan kutipan cerpen tersebut, pernyataan yang paling tepat mengenai penggunaan bahasa kias dan citraan adalah ....",
+            "options": {
+                "A": "Kalimat \"hatinya terasa seperti diremas-remas oleh tangan tak kasat mata\" menggunakan majas personifikasi karena hati dianggap seperti benda mati yang bisa diremas.",
+                "B": "Kalimat \"daun-daun pohon mangga di halaman rumah menari-nari liar\" menggunakan majas metafora karena daun digambarkan seperti manusia yang sedang menari.",
+                "C": "Kalimat \"hujan sore itu turun seperti jutaan jarum yang dijatuhkan dari langit\" menggunakan majas simile (perumpamaan) karena membandingkan hujan dengan jarum menggunakan kata \"seperti\".",
+                "D": "Kalimat \"matanya berkaca-kaca, menyimpan lautan kesedihan yang tak pernah tumpah\" menggunakan majas hiperbola karena melebih-lebihkan kesedihan yang tidak mungkin ditampung oleh mata."
+            },
+            "answer": "C",
+            "images": []
+        },
+        {
+            "id": 99,
+            "question": "Bacalah teks berikut dengan saksama!Amir dan Budi adalah dua pemuda lulusan SMK yang tinggal di kota yang sama. Mereka mendaftar program magang di sebuah perusahaan ternama. Amir selalu mengandalkan ijazah dan nilai rapor yang bagus. Ia malas mencari informasi tambahan tentang perusahaan tempat ia melamar. Saat seleksi wawancara, Amir hanya bisa menjawab pertanyaan sebatas teori yang ia hafal di sekolah. Ia tidak bisa menjelaskan bagaimana ia akan menyelesaikan masalah nyata yang sering terjadi di dunia kerja.Sementara itu, Budi memiliki nilai rapor yang biasa-biasa saja. Namun, selama liburan sekolah, Budi aktif mengikuti pelatihan daring, belajar mengoperasikan berbagai software, dan pernah membantu usaha kecil miliki pamannya. Sebelum wawancara, Budi mencari tahu profil perusahaan, produk yang dihasilkan, serta tantangan yang sering dihadapi industri tersebut. Saat wawancara, Budi mampu memberikan contoh pengalaman nyatanya dan menjelaskan bagaimana ia berkontribusi jika diterima magang.Hasilnya, Budi lolos seleksi magang, sedangkan Amir ditolak. Manajer HRD perusahaan tersebut mengatakan, \"Kami tidak hanya mencari nilai bagus. Kami mencari orang yang relevan dengan kebutuhan dunia kerja saat ini.\"Berdasarkan teks tersebut, peristiwa yang paling relevan dengan kehidupan sehari-hari saat ini adalah ....",
+            "options": {
+                "A": "Nilai rapor yang bagus adalah satu-satunya jaminan untuk sukses dalam seleksi magang atau pekerjaan.",
+                "B": "Pengalaman nyata dan kemauan belajar hal baru lebih berharga dibandingkan hanya mengandalkan nilai rapor.",
+                "C": "Mengikuti pelatihan daring hanya membuang-buang waktu karena tidak ada hubungannya dengan seleksi magang.",
+                "D": "Siswa sebaiknya hanya fokus belajar teori di sekolah tanpa perlu mencari pengalaman di luar sekolah."
+            },
+            "answer": "B",
+            "images": []
+        },
+        {
+            "id": 100,
+            "question": "Bacalah kutipan cerita fiksi berikut dengan saksama!Sepasang sepatu usang dengan sol terlepas masih setia di sudut beranda rumah kami. Itulah kenang-kenangan terakhir dari kakakku, Rendi, sebelum merantau lima tahun lalu. \"Aku akan kembali setelah berhasil,\" ucapnya pagi itu sembari memeluk Ibu erat. Ayah hanya terdiam dengan mata berkaca-kaca saat Rendi melambaikan tangan di balik gerbang.Awalnya kabar datang rutin, namun perlahan menghilang. Sudah tiga bulan ponselnya mati tanpa jejak. Kini, setiap sore Ibu duduk di beranda, menatap kosong ke gerbang sambil mengusap sepatu usang itu. \"Nak... kapan kau pulang?\" bisiknya lirih. Dari balik jendela, aku menahan perih melihat punggung Ibu yang mulai membungkuk dan rambutnya yang memutih. Aku marah pada Rendi, tapi lebih ingin ia pulang untuk memeluk Ibu.Hari ini hujan deras mengguyur. Ibu tetap di beranda dengan sepatu usang di pangkuannya. Ia tidak bergeming meski air hujan yang terjatuh dari atap membasahi ujung bajunya bajunya. Ia hanya menunggu seseorang yang mungkin tidak akan pernah kembali. Aku menghampirinya dan berlutut, \"Bu, masuklah. Nanti Ibu sakit.\" Ibu menoleh dengan mata sembab yang merah. \"Nak, apa Ibu salah melepaskan kepergian Rendi?\" tanyanya lirih. Aku tak sanggup menjawab. Aku hanya bisa memeluk Ibu sekuat tenaga, sementara air mataku bercampur dengan derasnya hujan.Berdasarkan kutipan cerpen tersebut, respons emosional yang paling mungkin dirasakan oleh pembaca saat membaca bagian akhir cerita adalah ....",
+            "options": {
+                "A": "Rasa senang dan bahagia karena akhirnya tokoh \"aku\" berani memeluk ibunya.",
+                "B": "Rasa jengkel dan kesal karena tokoh ibu terus menunggu anak yang tidak jelas kabarnya.",
+                "C": "Rasa sedih, haru, dan iba melihat pengorbanan seorang ibu yang terus menunggu anaknya.",
+                "D": "Rasa takut dan cemas karena hujan deras dapat menyebabkan banjir di rumah mereka."
+            },
+            "answer": "C",
+            "images": []
+        }
+    ]
+}
