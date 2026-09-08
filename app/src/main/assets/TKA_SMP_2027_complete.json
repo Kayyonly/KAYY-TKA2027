@@ -93,17 +93,19 @@
         },
         {
             "id": 5,
-            "question": "Bentuk paling sederhana dari adalah….",
-            "options": {},
+            "question": "Bentuk paling sederhana dari (2x² + 5x − 12)/(4x² − 9) adalah….",
+            "options": {
+                "A": "(x + 4)/(2x + 3)",
+                "B": "(x + 4)/(x + 3)",
+                "C": "(x + 4)/(2x − 3)",
+                "D": "(x + 2)/(2x + 1)"
+            },
             "answer": "A",
             "content_blocks": [
-                "Bentuk paling sederhana dari adalah…."
+                "Bentuk paling sederhana dari (2x² + 5x − 12)/(4x² − 9) adalah…."
             ],
-            "requires_media": true,
-            "images": [
-                "images/bitmap_97.png",
-                "images/bitmap_98.png"
-            ]
+            "requires_media": false,
+            "images": []
         },
         {
             "id": 6,
@@ -318,17 +320,17 @@
         {
             "id": 23,
             "question": "Diketahui beberapa pernyataan tentang bangun ruang.Pernyataan berikut yang benar adalah....",
-            "options": {},
+            "options": {
+                "A": "Rumus volume prisma segitiga adalah 1/3 × luas alas × tinggi prisma",
+                "B": "Semua diagonal ruang pada bangun kubus memiliki panjang yang sama.",
+                "C": "Sisi-sisi tegak pada bangun limas segi empat selalu berbentuk persegi panjang.",
+                "D": "Sisi tegak pada bangun prisma segitiga selalu berbentuk lingkaran."
+            },
             "answer": "B",
             "content_blocks": [
-                "Diketahui beberapa pernyataan tentang bangun ruang.Pernyataan berikut yang benar adalah....",
-                "A.B.C.D.",
-                "Rumus volume prisma segitiga adalah Semua diagonal ruang pada bangun kubus memiliki panjang yang sama. Sisi-sisi tegak pada bangun limas segi empat selalu berbentuk persegi panjang. Sisi tegak pada bangun prisma segitiga selalu berbentuk lingkaran."
+                "Diketahui beberapa pernyataan tentang bangun ruang.Pernyataan berikut yang benar adalah...."
             ],
-            "options_raw": "Rumus volume prisma segitiga adalah Semua diagonal ruang pada bangun kubus memiliki panjang yang sama. Sisi-sisi tegak pada bangun limas segi empat selalu berbentuk persegi panjang. Sisi tegak pada bangun prisma segitiga selalu berbentuk lingkaran.",
-            "images": [
-                "images/bitmap_39.png"
-            ]
+            "images": []
         },
         {
             "id": 24,
@@ -416,14 +418,17 @@
         {
             "id": 30,
             "question": "Dalam sebuah kotak terdapat 10 bola yang diberi nomor 1-10, diambil 3 bola satu persatu tanpa pengembalian. Jika pengembalian pertama dan kedua bernomor ganjil maka peluang terambil bola bernomor genap pada pengambilan ketiga adalah….",
-            "options": {},
+            "options": {
+                "A": "5/8",
+                "B": "3/8",
+                "C": "7/8",
+                "D": "1/8"
+            },
             "answer": "A",
             "content_blocks": [
                 "Dalam sebuah kotak terdapat 10 bola yang diberi nomor 1-10, diambil 3 bola satu persatu tanpa pengembalian. Jika pengembalian pertama dan kedua bernomor ganjil maka peluang terambil bola bernomor genap pada pengambilan ketiga adalah…."
             ],
-            "images": [
-                "images/bitmap_341.png"
-            ]
+            "images": []
         },
         {
             "id": 31,
@@ -477,66 +482,76 @@
         {
             "id": 35,
             "question": "Sebuah tangga sepanjang 13 meter disandarkan pada tembok. Jika jarak ujung bawah tangga ke tembok adalah 5 meter maka tinggi tembok yang dicapai tangga adalah ....",
-            "options": {},
+            "options": {
+                "A": "8 meter",
+                "B": "10 meter",
+                "C": "12 meter",
+                "D": "15 meter"
+            },
             "answer": "C",
             "content_blocks": [
-                "Sebuah tangga sepanjang 13 meter disandarkan pada tembok. Jika jarak ujung bawah tangga ke tembok adalah 5 meter maka tinggi tembok yang dicapai tangga adalah ....",
-                "A.B.C.D.",
-                "8 meter10 meter12 meter15 meter"
+                "Sebuah tangga sepanjang 13 meter disandarkan pada tembok. Jika jarak ujung bawah tangga ke tembok adalah 5 meter maka tinggi tembok yang dicapai tangga adalah ...."
             ],
-            "options_raw": "8 meter10 meter12 meter15 meter",
             "images": []
         },
         {
             "id": 36,
             "question": "Dua buah sudut saling berpelurus. Jika besar sudut pertama adalah 75° maka besar sudut kedua adalah ....",
-            "options": {},
+            "options": {
+                "A": "15°",
+                "B": "25°",
+                "C": "105°",
+                "D": "115°"
+            },
             "answer": "C",
             "content_blocks": [
-                "Dua buah sudut saling berpelurus. Jika besar sudut pertama adalah 75° maka besar sudut kedua adalah ....",
-                "A.B.C.D.",
-                "15°25°105°115°"
+                "Dua buah sudut saling berpelurus. Jika besar sudut pertama adalah 75° maka besar sudut kedua adalah ...."
             ],
-            "options_raw": "15°25°105°115°",
             "images": []
         },
         {
             "id": 37,
             "question": "Titik P(3,–5) dicerminkan terhadap garis y = x. Koordinat bayangan titik P adalah ....",
-            "options": {},
+            "options": {
+                "A": "(–5, 3)",
+                "B": "(5, –3)",
+                "C": "(–3, 5)",
+                "D": "(3, 5)"
+            },
             "answer": "A",
             "content_blocks": [
-                "Titik P(3,–5) dicerminkan terhadap garis y = x. Koordinat bayangan titik P adalah ....",
-                "A.B.C.D.",
-                "(–5, 3)(5, –3)(–3, 5)(3, 5)"
+                "Titik P(3,–5) dicerminkan terhadap garis y = x. Koordinat bayangan titik P adalah ...."
             ],
-            "options_raw": "(–5, 3)(5, –3)(–3, 5)(3, 5)",
             "images": []
         },
         {
             "id": 38,
             "question": "Sebuah bak mandi berbentuk kubus dengan panjang rusuk bagian dalam 80 cm. Jika bak tersebut diisi air hingga penuh, volume air tersebut dalam liter adalah ....",
-            "options": {},
+            "options": {
+                "A": "6,4 liter",
+                "B": "64 liter",
+                "C": "512 liter",
+                "D": "5.120 liter"
+            },
             "answer": "C",
             "content_blocks": [
-                "Sebuah bak mandi berbentuk kubus dengan panjang rusuk bagian dalam 80 cm. Jika bak tersebut diisi air hingga penuh, volume air tersebut dalam liter adalah ....",
-                "A.B.C.D.",
-                "6,4 liter64 liter512 liter5.120 liter"
+                "Sebuah bak mandi berbentuk kubus dengan panjang rusuk bagian dalam 80 cm. Jika bak tersebut diisi air hingga penuh, volume air tersebut dalam liter adalah ...."
             ],
-            "options_raw": "6,4 liter64 liter512 liter5.120 liter",
             "images": []
         },
         {
             "id": 39,
             "question": "Rata-rata nilai ujian matematika dari 14 siswa adalah 75. Jika nilai seorang siswa baru digabungkan, rata-ratanya menjadi 76. Nilai siswa baru tersebut adalah ....",
-            "options": {},
+            "options": {
+                "A": "80",
+                "B": "85",
+                "C": "90",
+                "D": "94"
+            },
             "answer": "C",
             "content_blocks": [
-                "Rata-rata nilai ujian matematika dari 14 siswa adalah 75. Jika nilai seorang siswa baru digabungkan, rata-ratanya menjadi 76. Nilai siswa baru tersebut adalah ....",
-                "A.B.C.D.",
-                "80859094"
+                "Rata-rata nilai ujian matematika dari 14 siswa adalah 75. Jika nilai seorang siswa baru digabungkan, rata-ratanya menjadi 76. Nilai siswa baru tersebut adalah ...."
             ],
-            "options_raw": "80859094",
             "images": []
         },
         {
@@ -565,11 +580,8 @@
             },
             "answer": "A",
             "content_blocks": [
-                "Sebuah proyek pembangunan laboratorium bahasa di sekolah ditargetkan selesai dalam waktu 40 hari oleh 15 orang pekerja. Setelah dikerjakan selama 10 hari, proyek terpaksa dihentikan selama 5 hari karena keterlambatan pengiriman material. Agar proyek dapat selesai tepat pada waktu yang telah ditargetkan semula, banyak pekerja tambahan yang harus ditambahkan oleh kontraktor adalah....",
-                "A.B.C.D.",
-                "3 orang 5 orang 18 orang 25 orang"
+                "Sebuah proyek pembangunan laboratorium bahasa di sekolah ditargetkan selesai dalam waktu 40 hari oleh 15 orang pekerja. Setelah dikerjakan selama 10 hari, proyek terpaksa dihentikan selama 5 hari karena keterlambatan pengiriman material. Agar proyek dapat selesai tepat pada waktu yang telah ditargetkan semula, banyak pekerja tambahan yang harus ditambahkan oleh kontraktor adalah...."
             ],
-            "options_raw": "3 orang 5 orang 18 orang 25 orang",
             "images": []
         },
         {
@@ -583,11 +595,8 @@
             },
             "answer": "A",
             "content_blocks": [
-                "Sebuah taman sekolah berbentuk persegi panjang memiliki ukuran panjang (3x – 2) meter dan lebar (x + 5) meter. Jika keliling taman tersebut disyaratkan tidak boleh lebih dari 62 meter, nilai x maksimal yang memenuhi syarat tersebut adalah....",
-                "A.B.C.D.",
-                "7 8 12 19"
+                "Sebuah taman sekolah berbentuk persegi panjang memiliki ukuran panjang (3x – 2) meter dan lebar (x + 5) meter. Jika keliling taman tersebut disyaratkan tidak boleh lebih dari 62 meter, nilai x maksimal yang memenuhi syarat tersebut adalah...."
             ],
-            "options_raw": "7 8 12 19",
             "images": []
         },
         {
@@ -601,11 +610,8 @@
             },
             "answer": "A",
             "content_blocks": [
-                "Untuk persiapan OSN, sekolah memesan buku paket dan kalkulator. Pada nota pertama dari toko A, pembelian 2 buku paket dan 3 kalkulator adalah Rp170.000. Pada nota kedua, pembelian 3 buku paket dan 1 kalkulator jenis yang sama adalah Rp185.000. Berdasarkan informasi tersebut, harga untuk 1 buah kalkulator adalah....",
-                "A.B.C.D.",
-                "Rp20.000 Rp25.000 Rp35.000 Rp55.000"
+                "Untuk persiapan OSN, sekolah memesan buku paket dan kalkulator. Pada nota pertama dari toko A, pembelian 2 buku paket dan 3 kalkulator adalah Rp170.000. Pada nota kedua, pembelian 3 buku paket dan 1 kalkulator jenis yang sama adalah Rp185.000. Berdasarkan informasi tersebut, harga untuk 1 buah kalkulator adalah...."
             ],
-            "options_raw": "Rp20.000 Rp25.000 Rp35.000 Rp55.000",
             "images": []
         },
         {
@@ -619,11 +625,8 @@
             },
             "answer": "B",
             "content_blocks": [
-                "Diketahui sebuah fungsi dirumuskan dengan f(x) = px + q. Jika diketahui hasil pemetaan f(2) = 7 dan f(-1) = -2, rumus fungsi f(x) yang benar adalah....",
-                "A.B.C.D.",
-                "f(x) = 3x - 1f(x) = 3x + 1f(x) = 2x + 3f(x) = 2x - 3"
+                "Diketahui sebuah fungsi dirumuskan dengan f(x) = px + q. Jika diketahui hasil pemetaan f(2) = 7 dan f(-1) = -2, rumus fungsi f(x) yang benar adalah...."
             ],
-            "options_raw": "f(x) = 3x - 1f(x) = 3x + 1f(x) = 2x + 3f(x) = 2x - 3",
             "images": []
         },
         {
@@ -637,11 +640,8 @@
             },
             "answer": "D",
             "content_blocks": [
-                "Kursi-kursi di aula sekolah disusun membentuk pola barisan aritmetika untuk acara perpisahan. Pada baris paling depan (pertama) terdapat 12 kursi, pada baris kedua terdapat 16 kursi, baris ketiga 20 kursi, dan seterusnya. Jika dalam aula tersebut memuat 10 baris kursi, kapasitas total tempat duduk di aula tersebut adalah....",
-                "A.B.C.D.",
-                "52 kursi 60 kursi 200 kursi 300 kursi"
+                "Kursi-kursi di aula sekolah disusun membentuk pola barisan aritmetika untuk acara perpisahan. Pada baris paling depan (pertama) terdapat 12 kursi, pada baris kedua terdapat 16 kursi, baris ketiga 20 kursi, dan seterusnya. Jika dalam aula tersebut memuat 10 baris kursi, kapasitas total tempat duduk di aula tersebut adalah...."
             ],
-            "options_raw": "52 kursi 60 kursi 200 kursi 300 kursi",
             "images": []
         },
         {
@@ -655,11 +655,8 @@
             },
             "answer": "B",
             "content_blocks": [
-                "Sebuah poster edukasi berukuran lebar 20 cm dan tinggi 30 cm ditempelkan pada selembar karton. Di sebelah kiri, kanan, dan atas poster masih tersisa ruang karton selebar 3 cm. Jika poster dan karton dipastikan sebangun, sisa lebar karton di bagian bawah poster adalah....",
-                "A.B.C.D.",
-                "3 cm6 cm9 cm12 cm"
+                "Sebuah poster edukasi berukuran lebar 20 cm dan tinggi 30 cm ditempelkan pada selembar karton. Di sebelah kiri, kanan, dan atas poster masih tersisa ruang karton selebar 3 cm. Jika poster dan karton dipastikan sebangun, sisa lebar karton di bagian bawah poster adalah...."
             ],
-            "options_raw": "3 cm6 cm9 cm12 cm",
             "images": []
         },
         {
@@ -673,11 +670,8 @@
             },
             "answer": "C",
             "content_blocks": [
-                "Sebuah titik K(–4, 2) pada bidang koordinat kartesius diberikan dua kali transformasi berurutan. Transformasi pertama adalah rotasi sebesar 90° searah jarum jam dengan titik pusat asal (0,0). Transformasi kedua adalah translasi sebesar (3, -1). Koordinat bayangan akhir titik K adalah....",
-                "A.B.C.D.",
-                "(2, 4)(2, -4)(5, 3)(5, -5)"
+                "Sebuah titik K(–4, 2) pada bidang koordinat kartesius diberikan dua kali transformasi berurutan. Transformasi pertama adalah rotasi sebesar 90° searah jarum jam dengan titik pusat asal (0,0). Transformasi kedua adalah translasi sebesar (3, -1). Koordinat bayangan akhir titik K adalah...."
             ],
-            "options_raw": "(2, 4)(2, -4)(5, 3)(5, -5)",
             "images": []
         },
         {
@@ -691,11 +685,8 @@
             },
             "answer": "C",
             "content_blocks": [
-                "Dalam pembelajaran bangun ruang sisi lengkung, siswa diminta merancang dua objek: sebuah tabung tanpa tutup dan sebuah kerucut utuh. Tabung dirancang dengan diameter 14 cm dan tinggi 20 cm. Kerucut dirancang dengan panjang jari-jari alas 7 cm dan garis pelukis 25 cm. Tinggi dari kerucut yang terbentuk dari rancangan tersebut adalah....",
-                "A.B.C.D.",
-                "15 cm 20 cm 24 cm 25 cm"
+                "Dalam pembelajaran bangun ruang sisi lengkung, siswa diminta merancang dua objek: sebuah tabung tanpa tutup dan sebuah kerucut utuh. Tabung dirancang dengan diameter 14 cm dan tinggi 20 cm. Kerucut dirancang dengan panjang jari-jari alas 7 cm dan garis pelukis 25 cm. Tinggi dari kerucut yang terbentuk dari rancangan tersebut adalah...."
             ],
-            "options_raw": "15 cm 20 cm 24 cm 25 cm",
             "images": []
         },
         {
@@ -709,11 +700,8 @@
             },
             "answer": "B",
             "content_blocks": [
-                "Hasil asesmen sumatif matematika dari 10 orang siswa adalah sebagai berikut: 75, 80, 85, 70, 90, 85, 60, 95, 80, 80. Nilai rata-rata (mean) dari kelompok data hasil asesmen tersebut adalah....",
-                "A.B.C.D.",
-                "75 80 82,5 85"
+                "Hasil asesmen sumatif matematika dari 10 orang siswa adalah sebagai berikut: 75, 80, 85, 70, 90, 85, 60, 95, 80, 80. Nilai rata-rata (mean) dari kelompok data hasil asesmen tersebut adalah...."
             ],
-            "options_raw": "75 80 82,5 85",
             "images": []
         },
         {
@@ -727,11 +715,8 @@
             },
             "answer": "D",
             "content_blocks": [
-                "Pada sebuah percobaan pelemparan dua buah dadu bermata enam secara bersamaan satu kali, diamati jumlah titik mata dadu yang muncul di permukaan atas. Banyaknya anggota ruang sampel (total kemungkinan) dari percobaan tersebut adalah....",
-                "A.B.C.D.",
-                "6 kemungkinan 12 kemungkinan 18 kemungkinan 36 kemungkinan"
+                "Pada sebuah percobaan pelemparan dua buah dadu bermata enam secara bersamaan satu kali, diamati jumlah titik mata dadu yang muncul di permukaan atas. Banyaknya anggota ruang sampel (total kemungkinan) dari percobaan tersebut adalah...."
             ],
-            "options_raw": "6 kemungkinan 12 kemungkinan 18 kemungkinan 36 kemungkinan",
             "images": []
         },
         {
@@ -745,11 +730,8 @@
             },
             "answer": "B",
             "content_blocks": [
-                "Danu memesan layanan ojek online untuk pergi ke tempat pembinaan persiapan olimpiade. Jarak yang ditempuh adalah 12 km. Tarif dasar perjalanan adalah Rp10.000 untuk 4 km pertama dan Rp2.500 untuk setiap kilometer berikutnya. Fajar memiliki voucer diskon sebesar 20% yang berlaku untuk total tarif.Total tarif perjalanan Danu sebelum dipotong oleh voucer diskon adalah....",
-                "A.B.C.D.",
-                "Rp20.000 Rp30.000 Rp40.000 Rp48.000"
+                "Danu memesan layanan ojek online untuk pergi ke tempat pembinaan persiapan olimpiade. Jarak yang ditempuh adalah 12 km. Tarif dasar perjalanan adalah Rp10.000 untuk 4 km pertama dan Rp2.500 untuk setiap kilometer berikutnya. Fajar memiliki voucer diskon sebesar 20% yang berlaku untuk total tarif.Total tarif perjalanan Danu sebelum dipotong oleh voucer diskon adalah...."
             ],
-            "options_raw": "Rp20.000 Rp30.000 Rp40.000 Rp48.000",
             "images": []
         },
         {
@@ -763,11 +745,8 @@
             },
             "answer": "A",
             "content_blocks": [
-                "Pak Darmanto merencanakan pembuatan taman literasi sekolah yang berbentuk persegi panjang. Panjang taman dirancang (2x + 3) meter dan lebarnya (x – 1) meter. Karena keterbatasan lahan, keliling taman tersebut disyaratkan tidak boleh lebih dari 34 meter. Model matematika yang tepat untuk menggambarkan batas keliling taman tersebut adalah....",
-                "A.B.C.D.",
-                "3x + 2 ≤ 343x + 2 ≤ 176x + 4 ≤ 346x + 2 ≤ 34"
+                "Pak Darmanto merencanakan pembuatan taman literasi sekolah yang berbentuk persegi panjang. Panjang taman dirancang (2x + 3) meter dan lebarnya (x – 1) meter. Karena keterbatasan lahan, keliling taman tersebut disyaratkan tidak boleh lebih dari 34 meter. Model matematika yang tepat untuk menggambarkan batas keliling taman tersebut adalah...."
             ],
-            "options_raw": "3x + 2 ≤ 343x + 2 ≤ 176x + 4 ≤ 346x + 2 ≤ 34",
             "images": []
         },
         {
@@ -781,11 +760,8 @@
             },
             "answer": "D",
             "content_blocks": [
-                "Aris Kristanto membeli 3 buah buku referensi pendamping Kurikulum Merdeka dan 2 buah spidol dengan total harga Rp85.000. Di toko yang sama, ia membeli 2 buah buku referensi dan 4 buah spidol sejenis seharga Rp70.000. Harga untuk 1 buah buku referensi tersebut adalah....",
-                "A.B.C.D.",
-                "Rp5.000 Rp10.000 Rp20.000 Rp25.000"
+                "Aris Kristanto membeli 3 buah buku referensi pendamping Kurikulum Merdeka dan 2 buah spidol dengan total harga Rp85.000. Di toko yang sama, ia membeli 2 buah buku referensi dan 4 buah spidol sejenis seharga Rp70.000. Harga untuk 1 buah buku referensi tersebut adalah...."
             ],
-            "options_raw": "Rp5.000 Rp10.000 Rp20.000 Rp25.000",
             "images": []
         },
         {
@@ -799,11 +775,8 @@
             },
             "answer": "C",
             "content_blocks": [
-                "Diberikan sebuah fungsi matematika yang dirumuskan dengan f(x) = –3x + 8. Jika diketahui nilai pemetaan f(a) = -1, nilai a yang memenuhi adalah....",
-                "A.B.C.D.",
-                "-313 11"
+                "Diberikan sebuah fungsi matematika yang dirumuskan dengan f(x) = –3x + 8. Jika diketahui nilai pemetaan f(a) = -1, nilai a yang memenuhi adalah...."
             ],
-            "options_raw": "-313 11",
             "images": []
         },
         {
@@ -817,11 +790,8 @@
             },
             "answer": "B",
             "content_blocks": [
-                "Dalam rangka penataan ruang kelas yang bermakna, susunan meja siswa diatur membentuk barisan aritmetika. Baris terdepan berisi 4 meja, baris kedua berisi 7 meja, baris ketiga berisi 10 meja, dan seterusnya berpola sama hingga baris ke-8 (baris paling belakang). Banyaknya meja yang terletak pada baris paling belakang (baris ke-8) adalah....",
-                "A.B.C.D.",
-                "3 meja 25 meja 28 meja 31 meja"
+                "Dalam rangka penataan ruang kelas yang bermakna, susunan meja siswa diatur membentuk barisan aritmetika. Baris terdepan berisi 4 meja, baris kedua berisi 7 meja, baris ketiga berisi 10 meja, dan seterusnya berpola sama hingga baris ke-8 (baris paling belakang). Banyaknya meja yang terletak pada baris paling belakang (baris ke-8) adalah...."
             ],
-            "options_raw": "3 meja 25 meja 28 meja 31 meja",
             "images": []
         },
         {
@@ -835,11 +805,8 @@
             },
             "answer": "A",
             "content_blocks": [
-                "Sebuah tiang bendera di lapangan sekolah setinggi 6 meter berdiri sejajar dengan sebuah pohon. Pada siang hari, panjang bayangan tiang bendera di tanah adalah 8 meter, sedangkan pada saat yang sama panjang bayangan pohon adalah 12 meter. Berdasarkan prinsip kesebangunan, tinggi pohon tersebut sebenarnya adalah....",
-                "A.B.C.D.",
-                "9 meter 10 meter 14 meter 16 meter"
+                "Sebuah tiang bendera di lapangan sekolah setinggi 6 meter berdiri sejajar dengan sebuah pohon. Pada siang hari, panjang bayangan tiang bendera di tanah adalah 8 meter, sedangkan pada saat yang sama panjang bayangan pohon adalah 12 meter. Berdasarkan prinsip kesebangunan, tinggi pohon tersebut sebenarnya adalah...."
             ],
-            "options_raw": "9 meter 10 meter 14 meter 16 meter",
             "images": []
         },
         {
@@ -853,16 +820,13 @@
             },
             "answer": "B",
             "content_blocks": [
-                "Sebuah titik koordinat A(–2, 5) direfleksikan terhadap sumbu-x, kemudian dilanjutkan dengan translasi sejauh perpindahan (4, -3). Koordinat titik bayangan akhir dari titik A tersebut adalah....",
-                "A.B.C.D.",
-                "(2, 5)(2, -8)(2, -2)(6, 2)"
+                "Sebuah titik koordinat A(–2, 5) direfleksikan terhadap sumbu-x, kemudian dilanjutkan dengan translasi sejauh perpindahan (4, -3). Koordinat titik bayangan akhir dari titik A tersebut adalah...."
             ],
-            "options_raw": "(2, 5)(2, -8)(2, -2)(6, 2)",
             "images": []
         },
         {
             "id": 58,
-            "question": "Siswa SMP kelas 9 mendapat tugas proyek untuk membuat model tangki air berbentuk tabung pejal dengan diameter 14 cm dan tinggi 10 cm. Di dalam tabung tersebut akan dimasukkan sebuah kerucut pejal dengan ukuran jari-jari alas dan tinggi yang sama persis dengan tabung. Volume maksimal dari ruang tabung tersebut adalah.... (Gunakan )",
+            "question": "Siswa SMP kelas 9 mendapat tugas proyek untuk membuat model tangki air berbentuk tabung pejal dengan diameter 14 cm dan tinggi 10 cm. Di dalam tabung tersebut akan dimasukkan sebuah kerucut pejal dengan ukuran jari-jari alas dan tinggi yang sama persis dengan tabung. Volume maksimal dari ruang tabung tersebut adalah.... (Gunakan π = 22/7)",
             "options": {
                 "A": "440 cm³",
                 "B": "513 cm³",
@@ -871,11 +835,8 @@
             },
             "answer": "D",
             "content_blocks": [
-                "Siswa SMP kelas 9 mendapat tugas proyek untuk membuat model tangki air berbentuk tabung pejal dengan diameter 14 cm dan tinggi 10 cm. Di dalam tabung tersebut akan dimasukkan sebuah kerucut pejal dengan ukuran jari-jari alas dan tinggi yang sama persis dengan tabung. Volume maksimal dari ruang tabung tersebut adalah.... (Gunakan )",
-                "A.B.C.D.",
-                "440 cm3513 cm31.026 cm31.540 cm3"
+                "Siswa SMP kelas 9 mendapat tugas proyek untuk membuat model tangki air berbentuk tabung pejal dengan diameter 14 cm dan tinggi 10 cm. Di dalam tabung tersebut akan dimasukkan sebuah kerucut pejal dengan ukuran jari-jari alas dan tinggi yang sama persis dengan tabung. Volume maksimal dari ruang tabung tersebut adalah.... (Gunakan π = 22/7)"
             ],
-            "options_raw": "440 cm3513 cm31.026 cm31.540 cm3",
             "images": []
         },
         {
@@ -889,21 +850,18 @@
             },
             "answer": "B",
             "content_blocks": [
-                "Hasil analisis asesmen soal HOTS dari sekelompok siswa menunjukkan sebaran nilai sebagai berikut: 80, 75, 90, 85, 75, 80, 80, 95. Nilai median (nilai tengah setelah data diurutkan) dari sebaran data tersebut adalah....",
-                "A.B.C.D.",
-                "77,5 80 82,5 85"
+                "Hasil analisis asesmen soal HOTS dari sekelompok siswa menunjukkan sebaran nilai sebagai berikut: 80, 75, 90, 85, 75, 80, 80, 95. Nilai median (nilai tengah setelah data diurutkan) dari sebaran data tersebut adalah...."
             ],
-            "options_raw": "77,5 80 82,5 85",
             "images": []
         },
         {
             "id": 60,
             "question": "Di atas meja guru, terdapat sebuah kotak berisi alat tulis yang terdiri dari 5 spidol merah, 3 spidol biru, dan 4 spidol hitam. Seseorang mengambil satu spidol secara acak untuk menulis di papan tulis. Peluang terambilnya spidol berwarna biru pada pengambilan acak tersebut adalah....",
             "options": {
-                "A": "[Data tidak tersedia]",
-                "B": "[Data tidak tersedia]",
-                "C": "[Data tidak tersedia]",
-                "D": "[Data tidak tersedia]"
+                "A": "1/12",
+                "B": "1/4",
+                "C": "1/4",
+                "D": "7/12"
             },
             "answer": "B",
             "content_blocks": [
@@ -976,27 +934,31 @@
         {
             "id": 66,
             "question": "Bacalah teks berikut!Sejak dua tahun terakhir, Rianti dikenal sebagai salah satu food vlogger yang cukup berpengaruh di kotanya. Setiap akhir pekan, ia menyempatkan diri untuk berkeliling mencari kuliner-kuliner unik yang tersembunyi di gang-gang sempit. Bukan sekadar makan dan merekam, Rianti juga menuliskan pengalaman rasa, suasana tempat, hingga sejarah singkat dagangan yang ia santap. Tak heran jika para pelaku UMKM kuliner mulai meliriknya sebagai mitra promosi.Suatu sore, Rianti menerima pesan singkat dari seorang pemilik warung soto langganannya. \"Kak, besok saya mau tutup warung. Sudah dua minggu ini pembeli sepi. Ongkos naik terus, tapi dagangan tidak laku,\" tulis pemilik warung dengan nada putus asa. Rianti merasa terenyuh. Ia kenal betul warung soto itu—kuahnya gurih, dagingnya empuk, dan harganya bersahabat. Hanya saja, lokasinya memang agak tersembunyi.Tanpa pikir panjang, Rianti pun membuat konten spesial tentang warung soto tersebut. Ia mengemasnya dengan gaya yang hangat dan apa adanya. Dalam dua hari, video itu ditonton lebih dari seratus ribu kali. Warung soto itu pun ramai kembali. \"Terima kasih, Kak. Kamu benar-benar juru selamat bagi kami,\" ucap pemilik warung dengan mata berkaca-kaca. Rianti hanya tersenyum. Ia sadar bahwa sebagai jembatan antara pedagang kecil dan pembeli, ia memiliki tanggung jawab sosial yang tak bisa diabaikan begitu saja.Makna kata juru selamat pada teks tersebut adalah….",
-            "options": {},
+            "options": {
+                "A": "orang yang bekerja menyelamatkan korban bencana",
+                "B": "seseorang yang menolong orang lain dari kesulitan ekonomi",
+                "C": "petugas keamanan yang melindungi warga",
+                "D": "pihak yang memberikan pertolongan pertama pada kecelakaan"
+            },
             "answer": "B",
             "content_blocks": [
-                "Bacalah teks berikut!Sejak dua tahun terakhir, Rianti dikenal sebagai salah satu food vlogger yang cukup berpengaruh di kotanya. Setiap akhir pekan, ia menyempatkan diri untuk berkeliling mencari kuliner-kuliner unik yang tersembunyi di gang-gang sempit. Bukan sekadar makan dan merekam, Rianti juga menuliskan pengalaman rasa, suasana tempat, hingga sejarah singkat dagangan yang ia santap. Tak heran jika para pelaku UMKM kuliner mulai meliriknya sebagai mitra promosi.Suatu sore, Rianti menerima pesan singkat dari seorang pemilik warung soto langganannya. \"Kak, besok saya mau tutup warung. Sudah dua minggu ini pembeli sepi. Ongkos naik terus, tapi dagangan tidak laku,\" tulis pemilik warung dengan nada putus asa. Rianti merasa terenyuh. Ia kenal betul warung soto itu—kuahnya gurih, dagingnya empuk, dan harganya bersahabat. Hanya saja, lokasinya memang agak tersembunyi.Tanpa pikir panjang, Rianti pun membuat konten spesial tentang warung soto tersebut. Ia mengemasnya dengan gaya yang hangat dan apa adanya. Dalam dua hari, video itu ditonton lebih dari seratus ribu kali. Warung soto itu pun ramai kembali. \"Terima kasih, Kak. Kamu benar-benar juru selamat bagi kami,\" ucap pemilik warung dengan mata berkaca-kaca. Rianti hanya tersenyum. Ia sadar bahwa sebagai jembatan antara pedagang kecil dan pembeli, ia memiliki tanggung jawab sosial yang tak bisa diabaikan begitu saja.Makna kata juru selamat pada teks tersebut adalah….",
-                "A.B.C.D.",
-                "orang yang bekerja menyelamatkan korban bencanaseseorang yang menolong orang lain dari kesulitan ekonomipetugas keamanan yang melindungi wargapihak yang memberikan pertolongan pertama pada kecelakaan"
+                "Bacalah teks berikut!Sejak dua tahun terakhir, Rianti dikenal sebagai salah satu food vlogger yang cukup berpengaruh di kotanya. Setiap akhir pekan, ia menyempatkan diri untuk berkeliling mencari kuliner-kuliner unik yang tersembunyi di gang-gang sempit. Bukan sekadar makan dan merekam, Rianti juga menuliskan pengalaman rasa, suasana tempat, hingga sejarah singkat dagangan yang ia santap. Tak heran jika para pelaku UMKM kuliner mulai meliriknya sebagai mitra promosi.Suatu sore, Rianti menerima pesan singkat dari seorang pemilik warung soto langganannya. \"Kak, besok saya mau tutup warung. Sudah dua minggu ini pembeli sepi. Ongkos naik terus, tapi dagangan tidak laku,\" tulis pemilik warung dengan nada putus asa. Rianti merasa terenyuh. Ia kenal betul warung soto itu—kuahnya gurih, dagingnya empuk, dan harganya bersahabat. Hanya saja, lokasinya memang agak tersembunyi.Tanpa pikir panjang, Rianti pun membuat konten spesial tentang warung soto tersebut. Ia mengemasnya dengan gaya yang hangat dan apa adanya. Dalam dua hari, video itu ditonton lebih dari seratus ribu kali. Warung soto itu pun ramai kembali. \"Terima kasih, Kak. Kamu benar-benar juru selamat bagi kami,\" ucap pemilik warung dengan mata berkaca-kaca. Rianti hanya tersenyum. Ia sadar bahwa sebagai jembatan antara pedagang kecil dan pembeli, ia memiliki tanggung jawab sosial yang tak bisa diabaikan begitu saja.Makna kata juru selamat pada teks tersebut adalah…."
             ],
-            "options_raw": "orang yang bekerja menyelamatkan korban bencanaseseorang yang menolong orang lain dari kesulitan ekonomipetugas keamanan yang melindungi wargapihak yang memberikan pertolongan pertama pada kecelakaan",
             "images": []
         },
         {
             "id": 67,
             "question": "Perhatikan teks berikut!Gempa bumi tektonik terjadi karena pergerakan lempeng-lempeng kerak bumi. Lempeng-lempeng ini saling mendorong, menarik, atau bergesekan satu sama lain. Ketika tekanan yang terkumpul di sepanjang patahan (sesar) melebihi kekuatan batuan, batuan tersebut akan patah dan melepaskan energi dalam bentuk gelombang seismik. Gelombang inilah yang menyebabkan getaran di permukaan bumi yang kita rasakan sebagai gempa. Wilayah yang berada di dekat batas lempeng, seperti Indonesia, memiliki potensi gempa tektonik yang tinggi karena berada di zona pertemuan tiga lempeng besar dunia, yaitu Lempeng Indo-Australia, Lempeng Eurasia, dan Lempeng Pasifik.Makna kata lempeng pada teks tersebut adalah….",
-            "options": {},
+            "options": {
+                "A": "benda tipis berbentuk pipih yang terbuat dari tanah liat, logam, atau bahan lainnya",
+                "B": "bagian padat dari kerak bumi yang terapung di atas lapisan astenosfer yang cair",
+                "C": "lapisan terluar bumi yang terdiri atas batuan padat dan tempat tinggal makhluk hidup",
+                "D": "piringan kecil yang digunakan untuk menyajikan makanan dalam jumlah sedikit"
+            },
             "answer": "B",
             "content_blocks": [
-                "Perhatikan teks berikut!Gempa bumi tektonik terjadi karena pergerakan lempeng-lempeng kerak bumi. Lempeng-lempeng ini saling mendorong, menarik, atau bergesekan satu sama lain. Ketika tekanan yang terkumpul di sepanjang patahan (sesar) melebihi kekuatan batuan, batuan tersebut akan patah dan melepaskan energi dalam bentuk gelombang seismik. Gelombang inilah yang menyebabkan getaran di permukaan bumi yang kita rasakan sebagai gempa. Wilayah yang berada di dekat batas lempeng, seperti Indonesia, memiliki potensi gempa tektonik yang tinggi karena berada di zona pertemuan tiga lempeng besar dunia, yaitu Lempeng Indo-Australia, Lempeng Eurasia, dan Lempeng Pasifik.Makna kata lempeng pada teks tersebut adalah….",
-                "A.B.C.D.",
-                "benda tipis berbentuk pipih yang terbuat dari tanah liat, logam, atau bahan lainnyabagian padat dari kerak bumi yang terapung di atas lapisan astenosfer yang cairlapisan terluar bumi yang terdiri atas batuan padat dan tempat tinggal makhluk hiduppiringan kecil yang digunakan untuk menyajikan makanan dalam jumlah sedikit"
+                "Perhatikan teks berikut!Gempa bumi tektonik terjadi karena pergerakan lempeng-lempeng kerak bumi. Lempeng-lempeng ini saling mendorong, menarik, atau bergesekan satu sama lain. Ketika tekanan yang terkumpul di sepanjang patahan (sesar) melebihi kekuatan batuan, batuan tersebut akan patah dan melepaskan energi dalam bentuk gelombang seismik. Gelombang inilah yang menyebabkan getaran di permukaan bumi yang kita rasakan sebagai gempa. Wilayah yang berada di dekat batas lempeng, seperti Indonesia, memiliki potensi gempa tektonik yang tinggi karena berada di zona pertemuan tiga lempeng besar dunia, yaitu Lempeng Indo-Australia, Lempeng Eurasia, dan Lempeng Pasifik.Makna kata lempeng pada teks tersebut adalah…."
             ],
-            "options_raw": "benda tipis berbentuk pipih yang terbuat dari tanah liat, logam, atau bahan lainnyabagian padat dari kerak bumi yang terapung di atas lapisan astenosfer yang cairlapisan terluar bumi yang terdiri atas batuan padat dan tempat tinggal makhluk hiduppiringan kecil yang digunakan untuk menyajikan makanan dalam jumlah sedikit",
             "images": []
         },
         {
@@ -1014,14 +976,16 @@
         {
             "id": 69,
             "question": "Perhatikan teks berikut!Padi sebagai Sumber Pangan UtamaPadi merupakan tanaman yang sangat penting bagi kehidupan manusia, terutama di Indonesia. Padi biasanya ditanam di lahan sawah yang memiliki air cukup. Pertumbuhan padi dipengaruhi oleh beberapa faktor, seperti kualitas tanah, ketersediaan air, dan sinar matahari. Padi yang sudah dipanen akan diproses menjadi beras, kemudian dimasak menjadi nasi sebagai makanan pokok. Selain itu, jerami hasil panen dapat dimanfaatkan untuk pakan ternak atau bahan kerajinan. Dalam proses penanaman padi, petani perlu melakukan perawatan seperti pengairan, pemupukan, dan pengendalian hama agar hasil panen maksimal.Berdasarkan teks tersebut, bagan yang tepat adalah….",
-            "options": {},
+            "options": {
+                "A": "Padi\n├─ Tempat tumbuh: Gurun\n├─ Faktor: Tanpa air & tanpa sinar matahari\n├─ Hasil: Jerami saja\n└─ Perawatan: Tidak perlu",
+                "B": "Padi\n├─ Tempat tumbuh: Sawah\n├─ Faktor pertumbuhan: Tanah, air, sinar matahari\n├─ Hasil: Beras → nasi + jerami (pakan/kerajinan)\n└─ Perawatan: Pengairan, pemupukan, pengendalian hama",
+                "C": "Padi\n├─ Tempat tumbuh: Dalam rumah\n├─ Hasil: Bunga hias\n├─ Faktor: Tidak jelas\n└─ Perawatan: Tidak ada",
+                "D": "Padi\n├─ Tempat tumbuh: Air laut\n├─ Hasil: Ikan\n├─ Faktor: Garam tinggi\n└─ Perawatan: Memancing"
+            },
             "answer": "B",
             "content_blocks": [
-                "Perhatikan teks berikut!Padi sebagai Sumber Pangan UtamaPadi merupakan tanaman yang sangat penting bagi kehidupan manusia, terutama di Indonesia. Padi biasanya ditanam di lahan sawah yang memiliki air cukup. Pertumbuhan padi dipengaruhi oleh beberapa faktor, seperti kualitas tanah, ketersediaan air, dan sinar matahari. Padi yang sudah dipanen akan diproses menjadi beras, kemudian dimasak menjadi nasi sebagai makanan pokok. Selain itu, jerami hasil panen dapat dimanfaatkan untuk pakan ternak atau bahan kerajinan. Dalam proses penanaman padi, petani perlu melakukan perawatan seperti pengairan, pemupukan, dan pengendalian hama agar hasil panen maksimal.Berdasarkan teks tersebut, bagan yang tepat adalah….",
-                "A.B.C.D.",
-                "Padi├─ Tempat tumbuh: Gurun├─ Faktor: Tanpa air & tanpa sinar matahari├─ Hasil: Jerami saja└─ Perawatan: Tidak perluPadi├─ Tempat tumbuh: Sawah├─ Faktor pertumbuhan: Tanah, air, sinar matahari├─ Hasil: Beras → nasi + jerami (pakan/kerajinan)└─ Perawatan: Pengairan, pemupukan, pengendalian hamaPadi├─ Tempat tumbuh: Dalam rumah├─ Hasil: Bunga hias├─ Faktor: Tidak jelas└─ Perawatan: Tidak adaPadi├─ Tempat tumbuh: Air laut├─ Hasil: Ikan├─ Faktor: Garam tinggi└─ Perawatan: Memancing"
+                "Perhatikan teks berikut!Padi sebagai Sumber Pangan UtamaPadi merupakan tanaman yang sangat penting bagi kehidupan manusia, terutama di Indonesia. Padi biasanya ditanam di lahan sawah yang memiliki air cukup. Pertumbuhan padi dipengaruhi oleh beberapa faktor, seperti kualitas tanah, ketersediaan air, dan sinar matahari. Padi yang sudah dipanen akan diproses menjadi beras, kemudian dimasak menjadi nasi sebagai makanan pokok. Selain itu, jerami hasil panen dapat dimanfaatkan untuk pakan ternak atau bahan kerajinan. Dalam proses penanaman padi, petani perlu melakukan perawatan seperti pengairan, pemupukan, dan pengendalian hama agar hasil panen maksimal.Berdasarkan teks tersebut, bagan yang tepat adalah…."
             ],
-            "options_raw": "Padi├─ Tempat tumbuh: Gurun├─ Faktor: Tanpa air & tanpa sinar matahari├─ Hasil: Jerami saja└─ Perawatan: Tidak perluPadi├─ Tempat tumbuh: Sawah├─ Faktor pertumbuhan: Tanah, air, sinar matahari├─ Hasil: Beras → nasi + jerami (pakan/kerajinan)└─ Perawatan: Pengairan, pemupukan, pengendalian hamaPadi├─ Tempat tumbuh: Dalam rumah├─ Hasil: Bunga hias├─ Faktor: Tidak jelas└─ Perawatan: Tidak adaPadi├─ Tempat tumbuh: Air laut├─ Hasil: Ikan├─ Faktor: Garam tinggi└─ Perawatan: Memancing",
             "images": []
         },
         {
@@ -1053,14 +1017,16 @@
         {
             "id": 72,
             "question": "Perhatikan teks berikut!Obesitas pada anak tidak terjadi secara tiba-tiba. Ada tiga faktor utama yang menjadi penyebabnya. Faktor pertama adalah pola makan yang tidak seimbang, seperti konsumsi makanan cepat saji yang tinggi gula, garam, dan lemak, serta rendah serat. Faktor kedua adalah kurangnya aktivitas fisik, di mana anak lebih banyak menghabiskan waktu di depan gawai daripada bermain di luar. Faktor ketiga adalah faktor genetik dan hormonal, meskipun pengaruhnya tidak sebesar dua faktor sebelumnya. Jika ketiga faktor ini tidak segera diatasi, anak berisiko mengalami berbagai penyakit kronis seperti diabetes tipe 2, tekanan darah tinggi, dan gangguan jantung di usia dini.Gagasan pokok teks tersebut adalah....",
-            "options": {},
+            "options": {
+                "A": "dampak obesitas pada anak terhadap kesehatan jangka panjang",
+                "B": "tiga faktor utama penyebab obesitas pada anak",
+                "C": "pentingnya aktivitas fisik untuk mencegah obesitas",
+                "D": "peran genetik dan hormonal dalam kasus obesitas anak"
+            },
             "answer": "B",
             "content_blocks": [
-                "Perhatikan teks berikut!Obesitas pada anak tidak terjadi secara tiba-tiba. Ada tiga faktor utama yang menjadi penyebabnya. Faktor pertama adalah pola makan yang tidak seimbang, seperti konsumsi makanan cepat saji yang tinggi gula, garam, dan lemak, serta rendah serat. Faktor kedua adalah kurangnya aktivitas fisik, di mana anak lebih banyak menghabiskan waktu di depan gawai daripada bermain di luar. Faktor ketiga adalah faktor genetik dan hormonal, meskipun pengaruhnya tidak sebesar dua faktor sebelumnya. Jika ketiga faktor ini tidak segera diatasi, anak berisiko mengalami berbagai penyakit kronis seperti diabetes tipe 2, tekanan darah tinggi, dan gangguan jantung di usia dini.Gagasan pokok teks tersebut adalah....",
-                "A.B.C.D.",
-                "dampak obesitas pada anak terhadap kesehatan jangka panjangtiga faktor utama penyebab obesitas pada anakpentingnya aktivitas fisik untuk mencegah obesitasperan genetik dan hormonal dalam kasus obesitas anak"
+                "Perhatikan teks berikut!Obesitas pada anak tidak terjadi secara tiba-tiba. Ada tiga faktor utama yang menjadi penyebabnya. Faktor pertama adalah pola makan yang tidak seimbang, seperti konsumsi makanan cepat saji yang tinggi gula, garam, dan lemak, serta rendah serat. Faktor kedua adalah kurangnya aktivitas fisik, di mana anak lebih banyak menghabiskan waktu di depan gawai daripada bermain di luar. Faktor ketiga adalah faktor genetik dan hormonal, meskipun pengaruhnya tidak sebesar dua faktor sebelumnya. Jika ketiga faktor ini tidak segera diatasi, anak berisiko mengalami berbagai penyakit kronis seperti diabetes tipe 2, tekanan darah tinggi, dan gangguan jantung di usia dini.Gagasan pokok teks tersebut adalah...."
             ],
-            "options_raw": "dampak obesitas pada anak terhadap kesehatan jangka panjangtiga faktor utama penyebab obesitas pada anakpentingnya aktivitas fisik untuk mencegah obesitasperan genetik dan hormonal dalam kasus obesitas anak",
             "images": []
         },
         {
@@ -1150,14 +1116,17 @@
         {
             "id": 80,
             "question": "Cermati kedua kutipan cerita berikut!Kutipan ISetelah bel pulang berbunyi, Dita segera merapikan buku-bukunya. Ia kemudian berjalan menuju taman sekolah untuk mencari udara segar. Di sana, ia melihat teman-temannya sedang bermain dan tertawa bersama. Tanpa disadari, Dita ikut tersenyum dan merasa lebih tenang setelah hari yang melelahkan di kelas. Ia memutuskan untuk duduk sejenak dan menikmati suasana sore itu.Kutipan IIBima terdiam sambil memegang medali juara lomba lari yang pernah ia menangkan saat masih di sekolah dasar. Ingatannya kembali pada hari perlombaan itu. Ia berlari sekuat tenaga di lintasan, bersaing dengan teman-temannya, hingga akhirnya berhasil menjadi yang tercepat. Suara sorakan penonton masih terasa jelas di pikirannya, membuatnya bangga akan pencapaian masa lalunya.Perbedaan pola pengembangan cerita pada kedua kutipan tersebut adalah….",
-            "options": {},
+            "options": {
+                "A": "Kutipan I: alur maju\nKutipan II: alur mundur",
+                "B": "Kutipan I: alur mundur\nKutipan II: alur maju",
+                "C": "Kutipan I: konflik fisik kuat\nKutipan II: konflik batin kuat",
+                "D": "Kutipan I: sudut pandang orang pertama\nKutipan II: sudut pandang orang ketiga"
+            },
             "answer": "A",
             "content_blocks": [
                 "Cermati kedua kutipan cerita berikut!Kutipan ISetelah bel pulang berbunyi, Dita segera merapikan buku-bukunya. Ia kemudian berjalan menuju taman sekolah untuk mencari udara segar. Di sana, ia melihat teman-temannya sedang bermain dan tertawa bersama. Tanpa disadari, Dita ikut tersenyum dan merasa lebih tenang setelah hari yang melelahkan di kelas. Ia memutuskan untuk duduk sejenak dan menikmati suasana sore itu.Kutipan IIBima terdiam sambil memegang medali juara lomba lari yang pernah ia menangkan saat masih di sekolah dasar. Ingatannya kembali pada hari perlombaan itu. Ia berlari sekuat tenaga di lintasan, bersaing dengan teman-temannya, hingga akhirnya berhasil menjadi yang tercepat. Suara sorakan penonton masih terasa jelas di pikirannya, membuatnya bangga akan pencapaian masa lalunya.Perbedaan pola pengembangan cerita pada kedua kutipan tersebut adalah…."
             ],
-            "images": [
-                "images/bitmap_181.png"
-            ]
+            "images": []
         },
         {
             "id": 81,
@@ -1318,14 +1287,16 @@
         {
             "id": 94,
             "question": "Bacalah teks berikut dengan saksama!Kesiapsiagaan menghadapi bencana banjir terbagi menjadi tiga tahap. Pertama, tahap sebelum banjir berfokus pada persiapan barang-barang krusial. Selain menyiapkan dokumen penting di wadah kedap air dan tas darurat, setiap keluarga harus aktif memantau prakiraan cuaca agar tidak terkejut saat debit air meningkat.Kedua, tahap saat banjir. Menekankan pada keselamatan nyawa. Mematikan aliran listrik dan gas adalah hal pertama yang harus dilakukan guna mencegah korsleting atau ledakan. Saat evakuasi, warga dilarang meremehkan arus air. Berjalan di dalam air banjir sangat berbahaya karena selain risiko terseret air, ada ancaman terperosok ke lubang yang tidak terlihat atau tertimpa benda yang hanyut.Tahap terakhir, yaitu setelah banjir, berfokus pada pemulihan. Penggunaan alat pelindung seperti sepatu bot saat membersihkan sisa banjir sangat penting untuk menghindari luka dari benda tajam yang tertimbun lumpur. Selain itu, pembersihan dengan desinfektan wajib dilakukan untuk membunuh kuman penyakit. Langkah terakhir adalah melaporkan kerusakan rumah kepada pihak RT untuk keperluan pendataan. Pola pengembangan teks tersebut disusun berdasarkan ….",
-            "options": {},
+            "options": {
+                "A": "Hubungan sebab-akibat",
+                "B": "Perbandingan dua kondisi berbeda",
+                "C": "Urutan langkah berdasarkan waktu kejadian",
+                "D": "Pemaparan masalah dan solusi"
+            },
             "answer": "C",
             "content_blocks": [
-                "Bacalah teks berikut dengan saksama!Kesiapsiagaan menghadapi bencana banjir terbagi menjadi tiga tahap. Pertama, tahap sebelum banjir berfokus pada persiapan barang-barang krusial. Selain menyiapkan dokumen penting di wadah kedap air dan tas darurat, setiap keluarga harus aktif memantau prakiraan cuaca agar tidak terkejut saat debit air meningkat.Kedua, tahap saat banjir. Menekankan pada keselamatan nyawa. Mematikan aliran listrik dan gas adalah hal pertama yang harus dilakukan guna mencegah korsleting atau ledakan. Saat evakuasi, warga dilarang meremehkan arus air. Berjalan di dalam air banjir sangat berbahaya karena selain risiko terseret air, ada ancaman terperosok ke lubang yang tidak terlihat atau tertimpa benda yang hanyut.Tahap terakhir, yaitu setelah banjir, berfokus pada pemulihan. Penggunaan alat pelindung seperti sepatu bot saat membersihkan sisa banjir sangat penting untuk menghindari luka dari benda tajam yang tertimbun lumpur. Selain itu, pembersihan dengan desinfektan wajib dilakukan untuk membunuh kuman penyakit. Langkah terakhir adalah melaporkan kerusakan rumah kepada pihak RT untuk keperluan pendataan. Pola pengembangan teks tersebut disusun berdasarkan ….",
-                "A.B.C.D.",
-                "Hubungan sebab-akibatPerbandingan dua kondisi berbedaUrutan langkah berdasarkan waktu kejadianPemaparan masalah dan solusi"
+                "Bacalah teks berikut dengan saksama!Kesiapsiagaan menghadapi bencana banjir terbagi menjadi tiga tahap. Pertama, tahap sebelum banjir berfokus pada persiapan barang-barang krusial. Selain menyiapkan dokumen penting di wadah kedap air dan tas darurat, setiap keluarga harus aktif memantau prakiraan cuaca agar tidak terkejut saat debit air meningkat.Kedua, tahap saat banjir. Menekankan pada keselamatan nyawa. Mematikan aliran listrik dan gas adalah hal pertama yang harus dilakukan guna mencegah korsleting atau ledakan. Saat evakuasi, warga dilarang meremehkan arus air. Berjalan di dalam air banjir sangat berbahaya karena selain risiko terseret air, ada ancaman terperosok ke lubang yang tidak terlihat atau tertimpa benda yang hanyut.Tahap terakhir, yaitu setelah banjir, berfokus pada pemulihan. Penggunaan alat pelindung seperti sepatu bot saat membersihkan sisa banjir sangat penting untuk menghindari luka dari benda tajam yang tertimbun lumpur. Selain itu, pembersihan dengan desinfektan wajib dilakukan untuk membunuh kuman penyakit. Langkah terakhir adalah melaporkan kerusakan rumah kepada pihak RT untuk keperluan pendataan. Pola pengembangan teks tersebut disusun berdasarkan …."
             ],
-            "options_raw": "Hubungan sebab-akibatPerbandingan dua kondisi berbedaUrutan langkah berdasarkan waktu kejadianPemaparan masalah dan solusi",
             "images": []
         },
         {
