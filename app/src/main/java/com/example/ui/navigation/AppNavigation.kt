@@ -1,6 +1,5 @@
 package com.example.ui.navigation
 
-import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -16,13 +15,17 @@ import com.example.ui.screens.ExamInstructionsScreen
 import com.example.ui.screens.ExamScreen
 import com.example.ui.screens.HomeScreen
 import com.example.ui.screens.PackageSelectionScreen
+import com.example.ui.screens.PracticeScreen
 import com.example.ui.screens.ResultScreen
 import com.example.ui.screens.SplashScreen
+import com.example.ui.screens.SubjectDetailScreen
 import com.example.ui.viewmodel.ExamViewModel
 
 object Routes {
     const val SPLASH = "splash"
     const val HOME = "home"
+    const val SUBJECT_DETAIL = "subject_detail"
+    const val PRACTICE = "practice"
     const val PACKAGES = "packages"
     const val INSTRUCTIONS = "instructions"
     const val EXAM = "exam"
@@ -58,6 +61,10 @@ fun AppNavigation(
         composable(Routes.HOME) {
             HomeScreen(
                 viewModel = viewModel,
+                onSelectSubject = { subject ->
+                    viewModel.selectSubject(subject)
+                    navController.navigate(Routes.SUBJECT_DETAIL)
+                },
                 onNavigateToPackages = {
                     navController.navigate(Routes.PACKAGES)
                 },
@@ -69,6 +76,36 @@ fun AppNavigation(
                     viewModel.startExam(pkg, resume = true)
                     navController.navigate(Routes.EXAM)
                 }
+            )
+        }
+
+        composable(Routes.SUBJECT_DETAIL) {
+            SubjectDetailScreen(
+                viewModel = viewModel,
+                onBack = { navController.popBackStack() },
+                onNavigateToPractice = { pkg ->
+                    viewModel.startPractice(pkg, resume = true)
+                    navController.navigate(Routes.PRACTICE)
+                },
+                onNavigateToInstructions = { pkg ->
+                    viewModel.selectPackageForInstruction(pkg)
+                    navController.navigate(Routes.INSTRUCTIONS)
+                },
+                onResumeExam = { pkg ->
+                    viewModel.startExam(pkg, resume = true)
+                    navController.navigate(Routes.EXAM)
+                },
+                onStartExam = { pkg ->
+                    viewModel.startExam(pkg, resume = false)
+                    navController.navigate(Routes.EXAM)
+                }
+            )
+        }
+
+        composable(Routes.PRACTICE) {
+            PracticeScreen(
+                viewModel = viewModel,
+                onBack = { navController.popBackStack() }
             )
         }
 

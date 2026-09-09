@@ -27,23 +27,26 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.data.model.ExamPackage
-import com.example.ui.components.ExamPackageCard
-import com.example.ui.components.PrimaryButton
+import com.example.data.model.Subject
 import com.example.ui.components.ResumeExamBanner
+import com.example.ui.components.SubjectCard
 import com.example.ui.viewmodel.ExamViewModel
 
 @Composable
 fun HomeScreen(
     viewModel: ExamViewModel,
+    onSelectSubject: (Subject) -> Unit,
     onNavigateToPackages: () -> Unit,
     onSelectPackage: (ExamPackage) -> Unit,
     onResumeExam: (ExamPackage) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val subjects by viewModel.subjects.collectAsState()
     val packages by viewModel.packages.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
     val examHistory by viewModel.examHistory.collectAsState()
     val activeProgressMap by viewModel.activeProgressMap.collectAsState()
+    val practiceProgressMap by viewModel.practiceProgressMap.collectAsState()
 
     // Find if there is an active unfinished package
     val activeEntry = activeProgressMap.entries.firstOrNull { (_, progress) ->
@@ -77,26 +80,26 @@ fun HomeScreen(
                     .fillMaxSize()
                     .padding(horizontal = 20.dp)
             ) {
-                // Minimal Header Section
+                // Header Section
                 item {
                     Spacer(modifier = Modifier.height(18.dp))
                     Column {
                         Text(
                             text = "TKA SMP 2027",
                             style = MaterialTheme.typography.headlineLarge.copy(
-                                fontWeight = FontWeight.SemiBold,
+                                fontWeight = FontWeight.Bold,
                                 color = MaterialTheme.colorScheme.onSurface
                             )
                         )
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(
-                            text = "Latihan TKA SMP • Simulasi Ujian Mandiri",
+                            text = "Pilih mata pelajaran untuk mulai belajar.",
                             style = MaterialTheme.typography.bodyMedium.copy(
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
                         )
                     }
-                    Spacer(modifier = Modifier.height(14.dp))
+                    Spacer(modifier = Modifier.height(10.dp))
                 }
 
                 // Resume Exam Banner if user has an unfinished exam
@@ -108,23 +111,11 @@ fun HomeScreen(
                             progress = progress,
                             onResume = { onResumeExam(activePackage) }
                         )
-                        Spacer(modifier = Modifier.height(6.dp))
-                    }
-                } else if (packages.isNotEmpty()) {
-                    // Primary CTA Card (Focus CTA) if no active exam
-                    item {
-                        val firstPackage = packages.first()
-                        PrimaryButton(
-                            text = "Mulai Latihan (${firstPackage.title})",
-                            onClick = { onSelectPackage(firstPackage) },
-                            trailingIcon = Icons.AutoMirrored.Filled.ArrowForward,
-                            modifier = Modifier.testTag("home_primary_cta")
-                        )
-                        Spacer(modifier = Modifier.height(6.dp))
+                        Spacer(modifier = Modifier.height(4.dp))
                     }
                 }
 
-                // Section Title
+                // Section Header: Mata Pelajaran
                 item {
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
@@ -132,14 +123,14 @@ fun HomeScreen(
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         Text(
-                            text = "Paket Ujian Tersedia",
+                            text = "Mata Pelajaran",
                             style = MaterialTheme.typography.titleMedium.copy(
                                 fontWeight = FontWeight.SemiBold,
                                 color = MaterialTheme.colorScheme.onSurface
                             )
                         )
                         Text(
-                            text = "${packages.size} Paket",
+                            text = "${subjects.size} Mata Pelajaran",
                             style = MaterialTheme.typography.bodySmall.copy(
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
@@ -147,21 +138,36 @@ fun HomeScreen(
                     }
                 }
 
-                // Package List
-                items(packages) { pkg ->
-                    val lastScore = examHistory.firstOrNull { it.packageId == pkg.id }?.score
-                    val activeProgress = activeProgressMap[pkg.id]
-                    ExamPackageCard(
-                        pkg = pkg,
-                        onSelect = {
-                            if (activeProgress != null && activeProgress.remainingSeconds > 0) {
-                                onResumeExam(pkg)
-                            } else {
-                                onSelectPackage(pkg)
-                            }
-                        },
+                // Subject Cards
+                items(subjects) { subject ->
+                    val pkgIds = subject.packages.map { it.id }.toSet()
+                    val lastScore = examHistory
+                        .filter { it.packageId in pkgIds }
+                        .maxByOrNull { it.timestamp }
+                        ?.score
+
+                    val totalQuestions = subject.packages.sumOf { it.questions.size }
+                    val answeredCount = if (subject.id == "simulasi_lengkap") {
+                        val activeProg = activeProgressMap["tka_smp_2027"]
+                        activeProg?.answers?.size ?: if (lastScore != null) totalQuestions else 0
+                    } else {
+                        subject.packages.sumOf { pkg ->
+                            practiceProgressMap[pkg.id]?.answers?.size ?: 0
+                        }
+                    }
+                    val progressFraction = if (totalQuestions > 0) {
+                        answeredCount.toFloat() / totalQuestions
+                    } else 0f
+
+                    SubjectCard(
+                        subject = subject,
                         lastScore = lastScore,
-                        activeProgress = activeProgress
+                        progressFraction = progressFraction,
+                        answeredQuestionsCount = answeredCount,
+                        onOpen = {
+                            viewModel.selectSubject(subject)
+                            onSelectSubject(subject)
+                        }
                     )
                 }
 
@@ -172,4 +178,3 @@ fun HomeScreen(
         }
     }
 }
-

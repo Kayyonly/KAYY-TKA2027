@@ -4,10 +4,13 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.data.model.ExamActiveProgress
+import com.example.data.model.ExamMode
 import com.example.data.model.ExamPackage
 import com.example.data.model.ExamSubmissionResult
+import com.example.data.model.PracticeProgress
 import com.example.data.model.Question
 import com.example.data.model.QuestionReviewItem
+import com.example.data.model.Subject
 import com.example.data.repository.ExamRepository
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -32,6 +35,12 @@ class ExamViewModel(application: Application) : AndroidViewModel(application) {
     private val _packages = MutableStateFlow<List<ExamPackage>>(emptyList())
     val packages: StateFlow<List<ExamPackage>> = _packages.asStateFlow()
 
+    private val _subjects = MutableStateFlow<List<Subject>>(emptyList())
+    val subjects: StateFlow<List<Subject>> = _subjects.asStateFlow()
+
+    private val _selectedSubject = MutableStateFlow<Subject?>(null)
+    val selectedSubject: StateFlow<Subject?> = _selectedSubject.asStateFlow()
+
     private val _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
 
@@ -41,9 +50,22 @@ class ExamViewModel(application: Application) : AndroidViewModel(application) {
     val activeProgressMap: StateFlow<Map<String, ExamActiveProgress>> = repository.getAllActiveProgress()
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyMap())
 
+    val practiceProgressMap: StateFlow<Map<String, PracticeProgress>> = repository.getAllPracticeProgress()
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyMap())
+
     // Active exam state
     private val _selectedPackage = MutableStateFlow<ExamPackage?>(null)
     val selectedPackage: StateFlow<ExamPackage?> = _selectedPackage.asStateFlow()
+
+    // Practice (Latihan) state
+    private val _practicePackage = MutableStateFlow<ExamPackage?>(null)
+    val practicePackage: StateFlow<ExamPackage?> = _practicePackage.asStateFlow()
+
+    private val _practiceCurrentIndex = MutableStateFlow(0)
+    val practiceCurrentIndex: StateFlow<Int> = _practiceCurrentIndex.asStateFlow()
+
+    private val _practiceAnswers = MutableStateFlow<Map<Int, String>>(emptyMap())
+    val practiceAnswers: StateFlow<Map<Int, String>> = _practiceAnswers.asStateFlow()
 
     private val _currentQuestionIndex = MutableStateFlow(0)
     val currentQuestionIndex: StateFlow<Int> = _currentQuestionIndex.asStateFlow()
@@ -80,8 +102,22 @@ class ExamViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             _isLoading.value = true
             _packages.value = repository.loadPackages()
+            _subjects.value = repository.getSubjects()
+            // If a subject was selected, update reference
+            val currentSelected = _selectedSubject.value
+            if (currentSelected != null) {
+                _selectedSubject.value = _subjects.value.find { it.id == currentSelected.id } ?: currentSelected
+            }
             _isLoading.value = false
         }
+    }
+
+    fun selectSubject(subject: Subject) {
+        _selectedSubject.value = subject
+    }
+
+    fun selectSubjectById(subjectId: String) {
+        _selectedSubject.value = _subjects.value.find { it.id == subjectId }
     }
 
     fun selectPackageForInstruction(pkg: ExamPackage) {
@@ -313,6 +349,81 @@ class ExamViewModel(application: Application) : AndroidViewModel(application) {
         _showSubmitDialog.value = false
         _showNavigatorSheet.value = false
         _lastSubmissionResult.value = null
+    }
+
+    // Practice (Latihan) methods
+    fun startPractice(pkg: ExamPackage, resume: Boolean = true) {
+        _practicePackage.value = pkg
+        val saved = practiceProgressMap.value[pkg.id]
+        if (resume && saved != null) {
+            _practiceCurrentIndex.value = saved.currentQuestionIndex.coerceIn(0, (pkg.questions.size - 1).coerceAtLeast(0))
+            _practiceAnswers.value = saved.answers
+        } else {
+            _practiceCurrentIndex.value = 0
+            _practiceAnswers.value = emptyMap()
+            viewModelScope.launch {
+                repository.clearPracticeProgress(pkg.id)
+            }
+        }
+    }
+
+    fun answerPracticeQuestion(questionId: Int, optionKey: String) {
+        val current = _practiceAnswers.value.toMutableMap()
+        current[questionId] = optionKey
+        _practiceAnswers.value = current
+        persistPracticeProgress()
+    }
+
+    fun jumpToPracticeQuestion(index: Int) {
+        val total = _practicePackage.value?.questions?.size ?: 0
+        if (index in 0 until total) {
+            _practiceCurrentIndex.value = index
+            persistPracticeProgress()
+        }
+    }
+
+    fun nextPracticeQuestion() {
+        val total = _practicePackage.value?.questions?.size ?: 0
+        if (_practiceCurrentIndex.value < total - 1) {
+            _practiceCurrentIndex.value += 1
+            persistPracticeProgress()
+        }
+    }
+
+    fun previousPracticeQuestion() {
+        if (_practiceCurrentIndex.value > 0) {
+            _practiceCurrentIndex.value -= 1
+            persistPracticeProgress()
+        }
+    }
+
+    private fun persistPracticeProgress() {
+        val pkg = _practicePackage.value ?: return
+        val index = _practiceCurrentIndex.value
+        val answers = _practiceAnswers.value
+        viewModelScope.launch {
+            repository.savePracticeProgress(
+                PracticeProgress(
+                    packageId = pkg.id,
+                    currentQuestionIndex = index,
+                    answers = answers,
+                    totalQuestions = pkg.questions.size
+                )
+            )
+        }
+    }
+
+    fun resetPractice(packageId: String) {
+        _practiceAnswers.value = emptyMap()
+        _practiceCurrentIndex.value = 0
+        viewModelScope.launch {
+            repository.clearPracticeProgress(packageId)
+        }
+    }
+
+    fun exitPractice() {
+        persistPracticeProgress()
+        _practicePackage.value = null
     }
 
     override fun onCleared() {
